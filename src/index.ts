@@ -1,0 +1,70 @@
+export interface OptionItem {
+	id: number;
+	name: string;
+}
+
+export interface CategoryOptionItem {
+	id: number;
+	level?: number;
+	name: string;
+	subcategories: OptionItem[];
+}
+
+export interface GroupedOptionItem extends OptionItem {
+	categoryName: string;
+}
+
+export interface TagType {
+	id: number;
+	name: string;
+}
+
+export interface Tag {
+	id: number;
+	name: string;
+	type: TagType;
+}
+
+export interface SkillType {
+	id: number;
+	name: string;
+}
+
+export interface Skill {
+	id: number;
+	name: string;
+	type: SkillType;
+}
+
+export interface Job {
+	id: number;
+	title: string;
+	seniority: OptionItem;
+	department: OptionItem;
+	location: OptionItem;
+	job_type: OptionItem;
+	description: string;
+	urgency: OptionItem;
+	positions: number;
+
+	min_salary?: number;
+	max_salary?: number;
+	visible_salary?: boolean;
+	currency_code?: string;
+
+	presenceStatuses: OptionItem[];
+	job_presence_statuses?: any[];
+	languages?: OptionItem[];
+	job_languages?: any[];
+	tags?: Tag[]; // includes free tags and skills
+	job_tags?: any[];
+	skills?: Skill[]; // includes technical, other, bonus
+	job_skills?: any[]; // includes technical, other, bonus
+	benefits?: OptionItem[];
+	job_benefits?: any[];
+
+	created_at: Date;
+	updated_at?: Date;
+	created_by: number;
+	updated_by?: number;
+}
