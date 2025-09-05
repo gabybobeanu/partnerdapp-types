@@ -67,4 +67,6 @@ export interface Job {
 	updated_at?: Date;
 	created_by: number;
 	updated_by?: number;
+
+	job_applications? : any[];
 }
