@@ -70,3 +70,18 @@ export interface Job {
 
 	job_applications? : any[];
 }
+
+export interface JobApplicationStatus {
+	id: number;
+	name: string;
+}
+
+export interface JobApplication {
+	recruiter_id: number;
+	recruiter: any;
+	job_id: number;
+	job: Job;
+	status_id: number;
+	status: JobApplicationStatus;
+	applied_at: Date;
+}
