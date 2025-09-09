@@ -135,3 +135,51 @@ export interface JobApplication {
 	status: JobApplicationStatus;
 	applied_at: Date;
 }
+
+export interface Title {
+	id: number;
+	code: string;
+	name: string;
+}
+export interface Gender {
+	id: number;
+	code: string;
+	name: string;
+}
+export interface Pronoun {
+	id: number;
+	code: string;
+	name: string;
+}
+export interface User {
+	id: number;
+	clerk_id: number;
+	email: string;
+	name: string;
+	surname: string;
+	phone: string;
+	//avatar: string;
+	
+	gender_id?: number;
+	gender?: Gender;
+	title_id?: number;
+	title?: Title;
+	pronoun_id?: number;
+	pronoun?: Pronoun;
+
+	profile_id: number;
+	profile: Profile;
+
+	recruiter?: Recruiter;
+
+	created_at: Date;
+	updated_at?: Date;
+}
+
+export interface Recruiter {
+	id: number;
+	user: User;
+	public_email: boolean;
+	public_phone: boolean;
+	signature: string;
+}
