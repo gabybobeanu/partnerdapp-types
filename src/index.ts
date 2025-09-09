@@ -1,3 +1,10 @@
+import type { JobApplicationStatusCode, JobTypeCode, JobUrgencyCode, PresenceStatusCode, ProfileCode, SkillTypeCode, TagTypeCode } from "./constants";
+
+export interface Profile {
+	id: number;
+	code: ProfileCode;
+	name: string;
+}
 export interface OptionItem {
 	id: number;
 	name: string;
@@ -14,8 +21,26 @@ export interface GroupedOptionItem extends OptionItem {
 	categoryName: string;
 }
 
+export interface PresenceStatus {
+	id: number;
+	code: PresenceStatusCode;
+	name: string;
+}
+
+export interface JobType {
+	id: number;
+	code: JobTypeCode;
+	name: string;
+}
+
+export interface JobUrgency {
+	id: number;
+	code: JobUrgencyCode;
+	name: string;
+}
 export interface TagType {
 	id: number;
+	code: TagTypeCode;
 	name: string;
 }
 
@@ -27,6 +52,7 @@ export interface Tag {
 
 export interface SkillType {
 	id: number;
+	code: SkillTypeCode
 	name: string;
 }
 
@@ -73,6 +99,7 @@ export interface Job {
 
 export interface JobApplicationStatus {
 	id: number;
+	code: JobApplicationStatusCode;
 	name: string;
 }
 
