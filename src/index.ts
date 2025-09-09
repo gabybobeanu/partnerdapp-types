@@ -1,4 +1,4 @@
-import type { JobApplicationStatusCode, JobTypeCode, JobUrgencyCode, PresenceStatusCode, ProfileCode, SkillTypeCode, TagTypeCode } from "./constants";
+import type { JobApplicationStatusCode, JobTypeCode, PresenceStatusCode, ProfileCode, SkillTypeCode, TagTypeCode, UrgencyCode } from "./constants";
 
 export interface Profile {
 	id: number;
@@ -33,9 +33,9 @@ export interface JobType {
 	name: string;
 }
 
-export interface JobUrgency {
+export interface Urgency {
 	id: number;
-	code: JobUrgencyCode;
+	code: UrgencyCode;
 	name: string;
 }
 export interface TagType {

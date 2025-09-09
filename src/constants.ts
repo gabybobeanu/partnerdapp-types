@@ -1,41 +1,41 @@
 export enum ProfileCode {
-  EMPLOYER = 'Employer',
-  RECRUITER = 'Recruiter',
-  CANDIDATE = 'Candidate',
+    EMPLOYER = 'EMPLOYER',
+    RECRUITER = 'RECRUITER',
+    CANDIDATE = 'CANDIDATE',
 }
 
 export enum JobTypeCode {
-    FULL_TIME = 'Full Time',
-    PART_TIME = 'Part Time',
-    CONTRACT = 'Contract',
+    FULL_TIME = 'FULL_TIME',
+    PART_TIME = 'PART_TIME',
+    CONTRACT = 'CONTRACT',
 }
 
 export enum PresenceStatusCode {
-    ONSITE = 'On-site',
-    REMOTE = 'Remote',
-    HYBRID = 'Hybrid',
+    ONSITE = 'ONSITE',
+    REMOTE = 'REMOTE',
+    HYBRID = 'HYBRID',
 }
 
-export enum JobUrgencyCode {
-    REGULAR = 'Regular',
-    URGENT = 'Urgent',
+export enum UrgencyCode {
+    REGULAR = 'REGULAR',
+    URGENT = 'URGENT',
 }
 
 export enum TagTypeCode {
-    TAG = 'Tag',
-    SKILL = 'Skill',
+    TAG = 'TAG',
+    SKILL = 'SKILL',
 }
 
 export enum SkillTypeCode {
-    TECHNICAL = 'Technical',
-    OTHER = 'Other',
-    BONUS = 'Bonus',
+    TECHNICAL = 'TECHNICAL',
+    OTHER = 'OTHER',
+    BONUS = 'BONUS',
 }
 
 export enum JobApplicationStatusCode {
-    AUTOAPPROVED = 'AutoApproved',
-    APPROVED = 'Approved',
-    PENDING = 'Pending',
-    REJECTED = 'Rejected',
-    WITHDRAWN = 'Withdrawn',
+    AUTOAPPROVED = 'AUTOAPPROVED',
+    APPROVED = 'APPROVED',
+    PENDING = 'PENDING',
+    REJECTED = 'REJECTED',
+    WITHDRAWN = 'WITHDRAWN',
 }
