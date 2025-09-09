@@ -77,7 +77,6 @@ export interface Skill {
 	name: string;
 	skill_type_id: number;
 	skill_type: SkillType;
-	position: number;
 }
 
 export interface JobSkill {
@@ -85,6 +84,7 @@ export interface JobSkill {
 	job: Job;
 	skill_id: number;
 	skill: Skill;
+	position: number;
 }
 
 export interface Job {
