@@ -60,6 +60,7 @@ export interface Skill {
 	id: number;
 	name: string;
 	type: SkillType;
+	position: number;
 }
 
 export interface Job {
