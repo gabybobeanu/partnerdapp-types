@@ -1,5 +1,12 @@
 import type { JobApplicationStatusCode, JobTypeCode, PresenceStatusCode, ProfileCode, SkillTypeCode, TagTypeCode, UrgencyCode } from "./constants";
 export * from "./constants";
+export * from "./objects/job-application-status";
+export * from "./objects/job-type";
+export * from "./objects/presence-status";
+export * from "./objects/profile";
+export * from "./objects/skill-type";
+export * from "./objects/tag-type";
+export * from "./objects/urgency";
 
 export interface Profile {
 	id: number;
@@ -60,7 +67,7 @@ export interface SkillType {
 export interface Skill {
 	id: number;
 	name: string;
-	type: SkillType;
+	skill_type: SkillType;
 	position: number;
 }
 
