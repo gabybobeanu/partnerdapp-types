@@ -55,20 +55,36 @@ export interface TagType {
 export interface Tag {
 	id: number;
 	name: string;
+	tag_type_id: number;
 	tag_type: TagType;
+}
+
+export interface JobTag {
+	job_id: number;
+	job: Job;
+	tag_id: number;
+	tag: Tag;
 }
 
 export interface SkillType {
 	id: number;
-	code: SkillTypeCode
+	code: SkillTypeCode;
 	name: string;
 }
 
 export interface Skill {
 	id: number;
 	name: string;
+	skill_type_id: number;
 	skill_type: SkillType;
 	position: number;
+}
+
+export interface JobSkill {
+	job_id: number;
+	job: Job;
+	skill_id: number;
+	skill: Skill;
 }
 
 export interface Job {
@@ -91,10 +107,8 @@ export interface Job {
 	job_presence_statuses?: any[];
 	languages?: OptionItem[];
 	job_languages?: any[];
-	tags?: Tag[]; // includes free tags and skills
-	job_tags?: any[];
-	skills?: Skill[]; // includes technical, other, bonus
-	job_skills?: any[]; // includes technical, other, bonus
+	job_tags?: JobTag[]; // includes free tags and skills
+	job_skills?: JobSkill[]; // includes technical, other, bonus
 	benefits?: OptionItem[];
 	job_benefits?: any[];
 
