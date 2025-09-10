@@ -158,7 +158,7 @@ export interface User {
 	name: string;
 	surname: string;
 	phone: string;
-	//avatar: string;
+	avatar?: number[] | undefined;
 	
 	gender_id?: number;
 	gender?: Gender;
