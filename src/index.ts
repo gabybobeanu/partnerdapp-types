@@ -175,11 +175,25 @@ export interface User {
 	created_at: Date;
 	updated_at?: Date;
 }
-
 export interface Recruiter {
 	id: number;
 	user: User;
+	// company_id: number;
+	// company: Company;
 	public_email: boolean;
 	public_phone: boolean;
 	signature: string;
+	invoice_agreement: boolean;
+	job_applications: JobApplication[];
+}
+
+export interface Employer {
+	id: number;
+	user: User;
+	// company_id: number;
+	// company: Company;
+	signature: string;
+
+	created_jobs: Job[];
+	updated_jobs: Job[];
 }
