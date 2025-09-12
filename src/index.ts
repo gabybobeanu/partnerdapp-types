@@ -117,7 +117,7 @@ export interface Job {
 	created_by: number;
 	updated_by?: number;
 
-	job_applications? : any[];
+	job_applications?: any[];
 }
 
 export interface JobApplicationStatus {
@@ -159,7 +159,7 @@ export interface User {
 	surname: string;
 	phone: string;
 	avatar?: number[] | undefined;
-	
+
 	gender_id?: number;
 	gender?: Gender;
 	title_id?: number;
@@ -196,4 +196,35 @@ export interface Employer {
 
 	created_jobs: Job[];
 	updated_jobs: Job[];
+}
+
+export interface CompanyLocation {
+	id: number;
+	company_id: number;		
+	company: Company
+	city?: string
+	country?: string
+	country_code?: string;
+	postal_code?: string;
+	address_1?: string;
+	address_2?: string;
+}
+export interface Company {
+	id: number;
+	name: string;
+	vat_number?: string;
+	registration_number?: string;
+
+	iban?: string;
+	bank_name?: string;
+	swift_code?: string;
+	currency_code?: string;
+	phone?: string;
+	logo?: number[] | undefined;
+	description?: string;
+
+	locations: CompanyLocation[];
+
+	employers: Employer[];
+	recruiters: Recruiter[];
 }
