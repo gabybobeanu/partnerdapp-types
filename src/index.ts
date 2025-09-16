@@ -166,6 +166,7 @@ export interface User {
 	title?: Title;
 	pronoun_id?: number;
 	pronoun?: Pronoun;
+	rating?: number;
 
 	profile_id: number;
 	profile: Profile;
