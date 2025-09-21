@@ -188,6 +188,8 @@ export interface Recruiter {
 	summary?: string;
 	invoice_agreement: boolean;
 	job_applications: JobApplication[];
+
+	autoApprovals: AutoApproval[];
 }
 
 export interface Employer {
@@ -199,6 +201,15 @@ export interface Employer {
 
 	created_jobs: Job[];
 	updated_jobs: Job[];
+
+	autoApprovals: AutoApproval[];
+}
+
+export interface AutoApproval {
+	employer_id: number;
+	employer: Employer;
+	recruiter_id: number;
+	recruiter: Recruiter;
 }
 
 export interface CompanyLocation {
