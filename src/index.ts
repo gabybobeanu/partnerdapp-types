@@ -167,6 +167,7 @@ export interface User {
 	pronoun_id?: number;
 	pronoun?: Pronoun;
 	rating?: number;
+	linkedin?: string;
 
 	profile_id: number;
 	profile: Profile;
@@ -179,11 +180,12 @@ export interface User {
 export interface Recruiter {
 	id: number;
 	user: User;
-	// company_id: number;
-	// company: Company;
+	company_id: number;
+	company: Company;
 	public_email: boolean;
 	public_phone: boolean;
 	signature: string;
+	summary?: string;
 	invoice_agreement: boolean;
 	job_applications: JobApplication[];
 }
