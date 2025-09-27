@@ -1,5 +1,5 @@
-import { SkillTypeCode } from "../constants";
-import type { SkillType } from "../index";
+import { SkillTypeCode } from "../constants.js";
+import type { SkillType } from "../index.js";
 
 export const SKILL_TYPE_TECHNICAL: SkillType = {
     id: 1,

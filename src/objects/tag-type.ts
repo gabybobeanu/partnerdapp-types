@@ -1,5 +1,5 @@
-import { JobApplicationStatusCode, SkillTypeCode, TagTypeCode } from "./../constants";
-import type { JobApplicationStatus, SkillType, TagType } from "./../index";
+import { TagTypeCode } from "./../constants.js";
+import type { TagType } from "./../index.js";
 
 export const TAG_TYPE_TAG: TagType = {
     id: 1,

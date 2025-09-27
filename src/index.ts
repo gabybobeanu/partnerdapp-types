@@ -1,12 +1,12 @@
-import type { JobApplicationStatusCode, JobTypeCode, PresenceStatusCode, ProfileCode, SkillTypeCode, TagTypeCode, UrgencyCode } from "./constants";
-export * from "./constants";
-export * from "./objects/job-application-status";
-export * from "./objects/job-type";
-export * from "./objects/presence-status";
-export * from "./objects/profile";
-export * from "./objects/skill-type";
-export * from "./objects/tag-type";
-export * from "./objects/urgency";
+import type { JobApplicationStatusCode, JobTypeCode, PresenceStatusCode, ProfileCode, SkillTypeCode, TagTypeCode, UrgencyCode } from "./constants.js";
+export * from "./constants.js";
+export * from "./objects/job-application-status.js";
+export * from "./objects/job-type.js";
+export * from "./objects/presence-status.js";
+export * from "./objects/profile.js";
+export * from "./objects/skill-type.js";
+export * from "./objects/tag-type.js";
+export * from "./objects/urgency.js";
 
 export interface Profile {
 	id: number;

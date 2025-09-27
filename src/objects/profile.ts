@@ -1,5 +1,5 @@
-import { ProfileCode } from "../constants";
-import type { Profile } from "../index";
+import { ProfileCode } from "../constants.js";
+import type { Profile } from "../index.js";
 
 export const PROFILE_RECRUITER: Profile = {
     id: 1,

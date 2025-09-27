@@ -1,5 +1,5 @@
-import { JobApplicationStatusCode } from "../constants";
-import type { JobApplicationStatus } from "../index";
+import { JobApplicationStatusCode } from "../constants.js";
+import type { JobApplicationStatus } from "../index.js";
 
 export const JOB_APPLICATION_STATUS_AUTOAPPROVED: JobApplicationStatus = {
     id: 1,

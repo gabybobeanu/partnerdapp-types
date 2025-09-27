@@ -1,5 +1,5 @@
-import { UrgencyCode } from "../constants";
-import type { Urgency } from "../index";
+import { UrgencyCode } from "../constants.js";
+import type { Urgency } from "../index.js";
 
 export const JOB_URGENCY_REGULAR: Urgency = {
     id: 1,

@@ -1,5 +1,5 @@
-import { PresenceStatusCode } from "../constants";
-import type { PresenceStatus } from "../index";
+import { PresenceStatusCode } from "../constants.js";
+import type { PresenceStatus } from "../index.js";
 
 export const PRESENCE_STATUS_ONSITE: PresenceStatus = {
     id: 1,

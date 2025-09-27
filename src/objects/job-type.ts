@@ -1,5 +1,5 @@
-import { JobTypeCode } from "../constants";
-import type { JobType } from "../index";
+import { JobTypeCode } from "../constants.js";
+import type { JobType } from "../index.js";
 
 export const JOB_TYPE_FULL_TIME: JobType = {
     id: 1,

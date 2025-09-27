@@ -1,21 +1,17 @@
 {
   // Visit https://aka.ms/tsconfig to read more about this file
   "compilerOptions": {
-    // File Layout
-    // "rootDir": "./src",
     "outDir": "dist",
+    "rootDir": "src",
 
     // Environment Settings
-    // See also https://aka.ms/tsconfig/module
-    // "module": "nodenext",
-    "module": "ESNext",
-    // "target": "esnext",
-	  "target": "ES2019",
-    "types": [],
-    // For nodejs:
-    // "lib": ["esnext"],
-    // "types": ["node"],
-    // and npm install -D @types/node
+    // "module": "ESNext",
+	  // "target": "ES2019",
+    // "types": [],
+
+    "target": "ES2019",
+    "module": "NodeNext",
+    "moduleResolution": "NodeNext",
 
     // Other Outputs
     "sourceMap": true,
