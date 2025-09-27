@@ -13,9 +13,16 @@ export interface Profile {
 	code: ProfileCode;
 	name: string;
 }
+
 export interface OptionItem {
 	id: number;
 	name: string;
+}
+
+export interface OptionItemLvl2 {
+	id: number;
+	name: string;
+	nameCorrespondence: string;
 }
 
 export interface CategoryOptionItem {
