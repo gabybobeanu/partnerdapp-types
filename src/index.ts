@@ -112,7 +112,7 @@ export interface Job {
 
 	presenceStatuses: OptionItem[];
 	job_presence_statuses?: any[];
-	languages?: OptionItem[];
+	languages?: OptionItemLvl2[];
 	job_languages?: any[];
 	job_tags?: JobTag[]; // includes free tags and skills
 	job_skills?: JobSkill[]; // includes technical, other, bonus
