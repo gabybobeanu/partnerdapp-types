@@ -178,6 +178,8 @@ export interface User {
 
 	profile_id: number;
 	profile: Profile;
+	role_id: number;
+	role: Role;
 
 	recruiter?: Recruiter;
 
@@ -248,4 +250,29 @@ export interface Company {
 
 	employers: Employer[];
 	recruiters: Recruiter[];
+}
+
+export interface Role {
+	id: number;
+	name: string;
+	profile_id: number;
+	profile: Profile;
+	users: User[];
+	invites: EmployerInvite[];
+}
+
+export interface EmployerInvite {
+	id: number;
+	token: string;
+	inviter_user_id: number;
+	company_id: number | null;
+	company: Company | null;
+	role_id: number;
+	role: Role | null;
+	email: string;
+	name: string | null;
+	surname: string | null;
+	expires_at: Date | null;
+	consumed_at: Date | null;
+	new_user_id: number | null;
 }
