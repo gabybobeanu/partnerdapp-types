@@ -255,10 +255,11 @@ export interface Company {
 export interface Role {
 	id: number;
 	name: string;
+	description?: string;
 	profile_id: number;
 	profile: Profile;
-	users: User[];
-	invites: EmployerInvite[];
+	users?: User[];
+	invites?: EmployerInvite[];
 }
 
 export interface EmployerInvite {
