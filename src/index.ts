@@ -1,4 +1,4 @@
-import type { JobApplicationStatusCode, JobTypeCode, PresenceStatusCode, ProfileCode, SkillTypeCode, TagTypeCode, UrgencyCode } from "./constants.js";
+import type { JobApplicationStatusCode, JobTypeCode, PresenceStatusCode, ProfileCode, RoleCode, SkillTypeCode, TagTypeCode, UrgencyCode } from "./constants.js";
 export * from "./constants.js";
 export * from "./objects/job-application-status.js";
 export * from "./objects/job-type.js";
@@ -254,6 +254,7 @@ export interface Company {
 
 export interface Role {
 	id: number;
+	code: RoleCode;
 	name: string;
 	description?: string;
 	profile_id: number;
@@ -276,4 +277,27 @@ export interface EmployerInvite {
 	expires_at: Date | null;
 	consumed_at: Date | null;
 	new_user_id: number | null;
+}
+
+export interface JobInvite {
+	id: number;
+	token: string;
+	job_id: number;
+	job: Job;
+	recruiter_id: number;
+	recruiter: Recruiter;
+	candidate_email: string;
+	candidate_name: string;
+	status_id: number;
+	status: JobInviteStatus;
+	created_at: Date;
+	consumed_at?: Date;
+	expires_at?: Date;
+}
+
+export interface JobInviteStatus {
+	id: number;
+	code: string;
+	name: string;
+	description?: string;
 }

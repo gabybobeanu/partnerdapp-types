@@ -4,6 +4,15 @@ export enum ProfileCode {
     CANDIDATE = 'CANDIDATE',
 }
 
+export enum RoleCode {
+    ADMINISTRATOR = 'ADMINISTRATOR',
+    HIRING_TEAM = 'HIRING_TEAM',
+    CONTENT_MANAGER = 'CONTENT_MANAGER',
+    NO_ACCESS = 'NO_ACCESS',
+    RECRUITER = 'RECRUITER',
+    CANDIDATE = 'CANDIDATE',
+}
+
 export enum JobTypeCode {
     FULL_TIME = 'FULL_TIME',
     PART_TIME = 'PART_TIME',
@@ -38,4 +47,10 @@ export enum JobApplicationStatusCode {
     PENDING = 'PENDING',
     REJECTED = 'REJECTED',
     WITHDRAWN = 'WITHDRAWN',
+}
+
+export enum JobInviteStatusCode {
+    PENDING = 'PENDING',
+    CONSUMED = 'CONSUMED',
+    EXPIRED = 'EXPIRED',
 }
