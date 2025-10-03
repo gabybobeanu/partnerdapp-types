@@ -1,9 +1,11 @@
 import type { JobApplicationStatusCode, JobTypeCode, PresenceStatusCode, ProfileCode, RoleCode, SkillTypeCode, TagTypeCode, UrgencyCode } from "./constants.js";
 export * from "./constants.js";
 export * from "./objects/job-application-status.js";
+export * from "./objects/job-invite-status.js";
 export * from "./objects/job-type.js";
 export * from "./objects/presence-status.js";
 export * from "./objects/profile.js";
+export * from "./objects/role.js";
 export * from "./objects/skill-type.js";
 export * from "./objects/tag-type.js";
 export * from "./objects/urgency.js";
