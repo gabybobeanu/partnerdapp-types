@@ -5,6 +5,7 @@ export * from "./objects/job-invite-status.js";
 export * from "./objects/job-type.js";
 export * from "./objects/presence-status.js";
 export * from "./objects/profile.js";
+export * from "./objects/right.js";
 export * from "./objects/role.js";
 export * from "./objects/skill-type.js";
 export * from "./objects/tag-type.js";
@@ -263,6 +264,7 @@ export interface Role {
 	profile: Profile;
 	users?: User[];
 	invites?: EmployerInvite[];
+	roleRights?: RoleRight[];
 }
 
 export interface EmployerInvite {
@@ -302,4 +304,19 @@ export interface JobInviteStatus {
 	code: string;
 	name: string;
 	description?: string;
+}
+
+export interface Right {
+	id: number;
+	code: string;
+	name: string;
+	description?: string;
+	roleRights?: RoleRight[];
+}
+
+export interface RoleRight {
+	role_id: number;
+	role: Role;
+	right_id: number;
+	right: Right;
 }
