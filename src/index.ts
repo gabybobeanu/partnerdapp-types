@@ -1,4 +1,4 @@
-import type { JobApplicationStatusCode, JobTypeCode, PresenceStatusCode, ProfileCode, RoleCode, SkillTypeCode, TagTypeCode, UrgencyCode } from "./constants.js";
+import type { JobApplicationStatusCode, JobTypeCode, PresenceStatusCode, ProfileCode, RightCode, RoleCode, SkillTypeCode, TagTypeCode, UrgencyCode } from "./constants.js";
 export * from "./constants.js";
 export * from "./objects/job-application-status.js";
 export * from "./objects/job-invite-status.js";
@@ -308,7 +308,7 @@ export interface JobInviteStatus {
 
 export interface Right {
 	id: number;
-	code: string;
+	code: RightCode;
 	name: string;
 	description?: string;
 	roleRights?: RoleRight[];
