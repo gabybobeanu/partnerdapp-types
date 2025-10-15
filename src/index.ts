@@ -1,5 +1,6 @@
 import type { JobApplicationStatusCode, JobTypeCode, PresenceStatusCode, ProfileCode, RightCode, RoleCode, SkillTypeCode, TagTypeCode, UrgencyCode } from "./constants.js";
 export * from "./constants.js";
+export * from "./objects/candidate-job-application-status.js";
 export * from "./objects/job-application-status.js";
 export * from "./objects/job-invite-status.js";
 export * from "./objects/job-type.js";
@@ -319,4 +320,37 @@ export interface RoleRight {
 	role: Role;
 	right_id: number;
 	right: Right;
+}
+
+export interface Candidate {
+	id: number;
+	description?: string;
+	user: User;
+	resumes: any[];
+	applications: CandidateJobApplication[];
+	pool: CandidatePool[];
+}
+
+export interface CandidatePool {
+	recruiter_id: number;
+	recruiter: Recruiter;
+	candidate_id: number;
+	candidate: Candidate;
+}
+
+export interface CandidateJobApplicationStatus {
+	id: number;
+	name: string;
+	code: string;
+	applications?: CandidateJobApplication[];
+}
+
+export interface CandidateJobApplication {
+	recruiter_id: number;
+	job_id: number;
+	jobApplication: JobApplication;
+	candidate_id: number;
+	candidate: Candidate;
+	status_id: number;
+	status: CandidateJobApplicationStatus;
 }

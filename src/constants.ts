@@ -78,3 +78,13 @@ export enum JobInviteStatusCode {
     CONSUMED = 'CONSUMED',
     EXPIRED = 'EXPIRED',
 }
+
+export enum CandidateJobApplicationStatusCode {
+    SHORTLIST = 'SHORTLIST',
+    INBOX = 'INBOX',
+    INTERVIEW = 'INTERVIEW',
+    TECH_INTERVIEW = 'TECH_INTERVIEW',
+    OFFERED = 'OFFERED',
+    HIRED = 'HIRED',
+    REJECTED = 'REJECTED',
+}
