@@ -2,7 +2,6 @@ import type { JobApplicationStatusCode, JobTypeCode, PresenceStatusCode, Profile
 export * from "./constants.js";
 export * from "./objects/candidate-job-application-status.js";
 export * from "./objects/job-application-status.js";
-export * from "./objects/job-invite-status.js";
 export * from "./objects/job-type.js";
 export * from "./objects/presence-status.js";
 export * from "./objects/profile.js";
@@ -294,17 +293,11 @@ export interface JobInvite {
 	candidate_email: string;
 	candidate_name: string;
 	status_id: number;
-	status: JobInviteStatus;
 	created_at: Date;
 	consumed_at?: Date;
 	expires_at?: Date;
-}
-
-export interface JobInviteStatus {
-	id: number;
-	code: string;
-	name: string;
-	description?: string;
+	candidate_id?: number;
+	candidate?: Candidate;
 }
 
 export interface Right {

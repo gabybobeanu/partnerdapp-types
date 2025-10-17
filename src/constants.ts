@@ -73,12 +73,6 @@ export enum JobApplicationStatusCode {
     WITHDRAWN = 'WITHDRAWN',
 }
 
-export enum JobInviteStatusCode {
-    PENDING = 'PENDING',
-    CONSUMED = 'CONSUMED',
-    EXPIRED = 'EXPIRED',
-}
-
 export enum CandidateJobApplicationStatusCode {
     SHORTLIST = 'SHORTLIST',
     INBOX = 'INBOX',
