@@ -1,14 +1,14 @@
 import { CandidateJobApplicationStatusCode, type CandidateJobApplicationStatus } from "../index.js";
 
-export const CANDIDATE_JOB_APPLICATION_STATUS_SHORTLIST: CandidateJobApplicationStatus = {
-    id: 1,
-    code: CandidateJobApplicationStatusCode.SHORTLIST,
-    name: "Shortlist",
-};
 export const CANDIDATE_JOB_APPLICATION_STATUS_INBOX: CandidateJobApplicationStatus = {
-    id: 2,
+    id: 1,
     code: CandidateJobApplicationStatusCode.INBOX,
     name: "Inbox",
+};
+export const CANDIDATE_JOB_APPLICATION_STATUS_SHORTLIST: CandidateJobApplicationStatus = {
+    id: 2,
+    code: CandidateJobApplicationStatusCode.SHORTLIST,
+    name: "Shortlist",
 };
 export const CANDIDATE_JOB_APPLICATION_STATUS_INTERVIEW: CandidateJobApplicationStatus = {
     id: 3,
@@ -37,8 +37,8 @@ export const CANDIDATE_JOB_APPLICATION_STATUS_REJECTED: CandidateJobApplicationS
 };
 
 export const CANDIDATE_JOB_APPLICATION_STATUSES: CandidateJobApplicationStatus[] = [
-    CANDIDATE_JOB_APPLICATION_STATUS_SHORTLIST,
     CANDIDATE_JOB_APPLICATION_STATUS_INBOX,
+    CANDIDATE_JOB_APPLICATION_STATUS_SHORTLIST,
     CANDIDATE_JOB_APPLICATION_STATUS_INTERVIEW,
     CANDIDATE_JOB_APPLICATION_STATUS_TECH_INTERVIEW,
     CANDIDATE_JOB_APPLICATION_STATUS_OFFERED,
