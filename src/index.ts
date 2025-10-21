@@ -350,3 +350,17 @@ export interface CandidateJobApplication {
 	status_id: number;
 	status: CandidateJobApplicationStatus;
 }
+
+export interface IdealJob {
+	id: number;
+	candidate: Candidate;
+	location?: string;
+	currency_code?: string;
+	salary?: number;
+	vacation_days?: number;
+	relocate?: boolean;
+	departments?: OptionItem[];
+	job_types?: OptionItem[];
+	presence_statuses?: OptionItem[];
+	benefits?: OptionItem[];
+}
