@@ -318,6 +318,9 @@ export interface RoleRight {
 export interface Candidate {
 	id: number;
 	description?: string;
+	city?: string;
+	country?: string;
+	country_code?: string;
 	user: User;
 	resumes: any[];
 	applications: CandidateJobApplication[];
