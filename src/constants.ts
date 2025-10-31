@@ -73,12 +73,19 @@ export enum JobApplicationStatusCode {
     WITHDRAWN = 'WITHDRAWN',
 }
 
-export enum CandidateJobApplicationStatusCode {
-    SHORTLIST = 'SHORTLIST',
-    INBOX = 'INBOX',
-    INTERVIEW = 'INTERVIEW',
-    TECH_INTERVIEW = 'TECH_INTERVIEW',
-    OFFERED = 'OFFERED',
-    HIRED = 'HIRED',
-    REJECTED = 'REJECTED',
+export enum StageTypeName {
+    SCREENING = 'Screening',
+    INTERVIEW = 'Interview',
+    OFFER = 'Offer',
+}
+
+export enum StageCategoryName {
+    MANDATORY = 'Mandatory',
+    DEFAULT = 'Default',
+    CUSTOM = 'Custom',
+}
+
+export enum StageOwnerTypeName {
+    EMPLOYER = 'Employer',
+    RECRUITER = 'Recruiter',
 }

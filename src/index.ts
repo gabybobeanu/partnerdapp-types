@@ -1,6 +1,6 @@
 import type { JobApplicationStatusCode, JobTypeCode, PresenceStatusCode, ProfileCode, RightCode, RoleCode, SkillTypeCode, TagTypeCode, UrgencyCode } from "./constants.js";
 export * from "./constants.js";
-export * from "./objects/candidate-job-application-status.js";
+export * from "./objects/stage.js";
 export * from "./objects/job-application-status.js";
 export * from "./objects/job-type.js";
 export * from "./objects/presence-status.js";
@@ -10,6 +10,9 @@ export * from "./objects/role.js";
 export * from "./objects/skill-type.js";
 export * from "./objects/tag-type.js";
 export * from "./objects/urgency.js";
+export * from "./objects/stage-category.js";
+export * from "./objects/stage-owner-type.js";
+export * from "./objects/stage-type.js";
 
 export interface Profile {
 	id: number;
@@ -128,6 +131,7 @@ export interface Job {
 	updated_by?: number;
 
 	job_applications?: any[];
+	stages?: Stage[];
 }
 
 export interface JobApplicationStatus {
@@ -183,6 +187,8 @@ export interface User {
 	profile: Profile;
 	role_id: number;
 	role: Role;
+
+	stages?: Stage[];
 
 	recruiter?: Recruiter;
 
@@ -334,21 +340,15 @@ export interface CandidatePool {
 	candidate: Candidate;
 }
 
-export interface CandidateJobApplicationStatus {
-	id: number;
-	name: string;
-	code: string;
-	applications?: CandidateJobApplication[];
-}
-
 export interface CandidateJobApplication {
 	recruiter_id: number;
 	job_id: number;
 	jobApplication: JobApplication;
 	candidate_id: number;
 	candidate: Candidate;
-	status_id: number;
-	status: CandidateJobApplicationStatus;
+	stage_id?: number;
+	stage?: Stage;
+	active?: boolean;
 }
 
 export interface IdealJob {
@@ -363,4 +363,40 @@ export interface IdealJob {
 	job_types?: OptionItem[];
 	presence_statuses?: OptionItem[];
 	benefits?: OptionItem[];
+}
+
+export interface StageType {
+	id: number;
+	name: string;
+	stages?: Stage[];
+}
+
+export interface StageCategory {
+	id: number;
+	name: string;
+	stages?: Stage[];
+}
+
+export interface StageOwnerType {
+	id: number;
+	name: string;
+	stages?: Stage[];
+}
+
+export interface Stage {
+	id?: number;
+	name: string;
+	job_id?: number;
+	job?: Job;
+	type_id: number;
+	type: StageType;
+	category_id: number;
+	category: StageCategory;
+	owner_type_id: number;
+	owner_type: StageOwnerType;
+	owner_id?: number;
+	owner?: User;
+	sequence?: number;
+
+	applications?: CandidateJobApplication[];
 }
