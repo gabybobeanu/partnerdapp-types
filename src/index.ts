@@ -361,7 +361,7 @@ export interface IdealJob {
 	vacation_days?: number;
 	relocate?: boolean;
 	departments?: OptionItem[];
-	job_types?: OptionItem[];
+	job_types?: IdealJobType[];
 	presence_statuses?: IdealJobPresenceStatus[];
 	benefits?: OptionItem[];
 }
@@ -372,7 +372,6 @@ export interface IdealJobPresenceStatus {
 	presence_status_id: number;
 	presence_status: PresenceStatus;
 }
-
 
 
 export interface IdealJobType {
