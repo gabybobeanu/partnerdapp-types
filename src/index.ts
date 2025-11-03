@@ -360,7 +360,7 @@ export interface IdealJob {
 	salary?: number;
 	vacation_days?: number;
 	relocate?: boolean;
-	departments?: OptionItem[];
+	departments?: IdealJobDepartment[];
 	job_types?: IdealJobType[];
 	presence_statuses?: IdealJobPresenceStatus[];
 	benefits?: OptionItem[];
@@ -373,7 +373,6 @@ export interface IdealJobPresenceStatus {
 	presence_status: PresenceStatus;
 }
 
-
 export interface IdealJobType {
 	ideal_job_id: number;
 	ideal_job: IdealJob
@@ -381,6 +380,28 @@ export interface IdealJobType {
 	job_type: JobType;
 }
 
+export interface IdealJobDepartment {
+	ideal_job_id: number;
+	ideal_job: IdealJob
+	department_id: number;
+	department: Department;
+}
+
+export interface Department {
+	id: number;
+	name: string
+	categ_id: number;
+	department: DepartmentCategory;
+	jobs: Job[];
+	ideal_job_departments: IdealJobDepartment[];
+}
+
+export interface DepartmentCategory {
+	id: number;
+	name: string;
+	level: number;
+	departments: Department[];
+}
 
 export interface StageType {
 	id: number;
