@@ -362,8 +362,15 @@ export interface IdealJob {
 	relocate?: boolean;
 	departments?: OptionItem[];
 	job_types?: OptionItem[];
-	presence_statuses?: OptionItem[];
+	presence_statuses?: IdealJobPresenceStatus[];
 	benefits?: OptionItem[];
+}
+
+export interface IdealJobPresenceStatus {
+	ideal_job_id: number;
+	ideal_job: IdealJob
+	presence_status_id: number;
+	presence_status: PresenceStatus[];
 }
 
 export interface StageType {
