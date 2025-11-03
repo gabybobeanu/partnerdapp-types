@@ -400,3 +400,16 @@ export interface Stage {
 
 	applications?: CandidateJobApplication[];
 }
+
+export interface CalendarEvent {
+	event_id: number;
+	job_id: number;
+  	job: Job;
+	candidate_id: number;
+	candidate: Candidate;
+	employer_id: number;
+	employer: Employer;
+	publicDetails: string;
+	privateDetails: string;
+	created_at: Date;
+}
