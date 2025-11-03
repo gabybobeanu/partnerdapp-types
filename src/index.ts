@@ -373,6 +373,16 @@ export interface IdealJobPresenceStatus {
 	presence_status: PresenceStatus;
 }
 
+
+
+export interface IdealJobType {
+	ideal_job_id: number;
+	ideal_job: IdealJob
+	job_type_id: number;
+	job_type: JobType;
+}
+
+
 export interface StageType {
 	id: number;
 	name: string;
