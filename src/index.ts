@@ -370,7 +370,7 @@ export interface IdealJobPresenceStatus {
 	ideal_job_id: number;
 	ideal_job: IdealJob
 	presence_status_id: number;
-	presence_status: PresenceStatus[];
+	presence_status: PresenceStatus;
 }
 
 export interface StageType {
