@@ -330,6 +330,7 @@ export interface Candidate {
 	user: User;
 	resumes: any[];
 	applications: CandidateJobApplication[];
+	ideal_jobs: IdealJob[];
 	pool: CandidatePool[];
 }
 
