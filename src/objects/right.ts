@@ -102,6 +102,51 @@ export const RIGHT_AUTOAPPROVE_RECRUITER: Right = {
     code: RightCode.AUTOAPPROVE_RECRUITER,
     name: "Auto-approve Recruiter",
 };
+export const RIGHT_VIEW_JOB_KANBAN: Right = {
+    id: 21,
+    code: RightCode.VIEW_JOB_KANBAN,
+    name: "View Job Kanban",
+};
+export const MOVE_CANDIDATE_TO_STAGE: Right = {
+    id: 22,
+    code: RightCode.MOVE_CANDIDATE_TO_STAGE,
+    name: "Move Candidate to Stage",
+};
+export const ADD_KANBAN_STAGE: Right = {
+    id: 23,
+    code: RightCode.ADD_KANBAN_STAGE,
+    name: "Add Kanban Stage",
+};
+export const EDIT_KANBAN_STAGE_NAME: Right = {
+    id: 24,
+    code: RightCode.EDIT_KANBAN_STAGE_NAME,
+    name: "Edit Kanban Stage Name",
+};
+export const EDIT_KANBAN_STAGE_TYPE: Right = {
+    id: 25,
+    code: RightCode.EDIT_KANBAN_STAGE_TYPE,
+    name: "Edit Kanban Stage Type",
+};
+export const DELETE_KANBAN_STAGE: Right = {
+    id: 26,
+    code: RightCode.DELETE_KANBAN_STAGE,
+    name: "Delete Kanban Stage",
+};
+export const HIRE_CANDIDATE: Right = {
+    id: 27,
+    code: RightCode.HIRE_CANDIDATE,
+    name: "Hire Candidate",
+};
+export const REJECT_CANDIDATE: Right = {
+    id: 28,
+    code: RightCode.REJECT_CANDIDATE,
+    name: "Reject Candidate",
+};
+export const ADD_KANBAN_STAGE_TRIGGER: Right = {
+    id: 29,
+    code: RightCode.ADD_KANBAN_STAGE_TRIGGER,
+    name: "Add Kanban Stage Trigger",
+};
 
 export const RIGHTS: Right[] = [
     RIGHT_VIEW_JOBS_LIST,
