@@ -192,6 +192,12 @@ export interface User {
 
 	recruiter?: Recruiter;
 
+	received_reviews: Review[];
+	given_reviews: Review[];
+
+	sent_messages: Message[];
+	received_messages: Message[];
+
 	created_at: Date;
 	updated_at?: Date;
 }
@@ -470,5 +476,25 @@ export interface CalendarEvent {
 	employer: Employer;
 	publicDetails: string;
 	privateDetails: string;
+	created_at: Date;
+}
+
+export interface Review {
+	user_id: number;
+	user: User;
+	rating: number;
+	text: string;
+	reviewer_id: number;
+	reviewer: User;
+	created_at: Date;
+}
+
+export interface Message {
+	id: number;
+	from_user_id: number;
+	from_user: User;
+	to_user_id: number;
+	to_user: User;
+	text: string;
 	created_at: Date;
 }
