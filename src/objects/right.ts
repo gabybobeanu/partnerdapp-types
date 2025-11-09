@@ -147,6 +147,11 @@ export const ADD_KANBAN_STAGE_TRIGGER: Right = {
     code: RightCode.ADD_KANBAN_STAGE_TRIGGER,
     name: "Add Kanban Stage Trigger",
 };
+export const EDIT_KANBAN_STAGE_ORDER: Right = {
+    id: 30,
+    code: RightCode.EDIT_KANBAN_STAGE_ORDER,
+    name: "Edit Kanban Stage Order",
+};
 
 export const RIGHTS: Right[] = [
     RIGHT_VIEW_JOBS_LIST,
