@@ -363,7 +363,7 @@ export interface IdealJob {
 	departments?: IdealJobDepartment[];
 	job_types?: IdealJobType[];
 	presence_statuses?: IdealJobPresenceStatus[];
-	benefits?: OptionItem[];
+	benefits?: IdealJobBenefit[];
 }
 
 export interface IdealJobPresenceStatus {
@@ -401,6 +401,27 @@ export interface DepartmentCategory {
 	name: string;
 	level: number;
 	departments: Department[];
+}
+
+export interface IdealJobBenefit {
+	ideal_job_id: number;
+	ideal_job: IdealJob;
+	benefit_id: number;
+	benefit: Benefit;
+}
+
+export interface Benefit {
+	id: number;
+	name: string;
+	job_benefits: JobBenefit[];
+	ideal_job_benefits: IdealJobBenefit[];
+}
+
+export interface JobBenefit {
+	id: number;
+	job_id: number;
+	benefit_id: number;
+	benefit: Benefit;
 }
 
 export interface StageType {
