@@ -423,6 +423,7 @@ export interface Benefit {
 	ideal_job_benefits: IdealJobBenefit[];
 }
 
+
 export interface JobBenefit {
 	id: number;
 	job_id: number;
