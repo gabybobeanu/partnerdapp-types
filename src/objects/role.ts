@@ -15,10 +15,10 @@ export const ROLE_HIRING_TEAM: Role = {
     profile_id: PROFILE_EMPLOYER.id,
     profile: PROFILE_EMPLOYER,
 };
-export const ROLE_CONTENT_MANAGER: Role = {
+export const ROLE_INTERNAL_RECRUITER: Role = {
     id: 3,
-    code: RoleCode.CONTENT_MANAGER,
-    name: "Content Manager",
+    code: RoleCode.INTERNAL_RECRUITER,
+    name: "Internal Recruiter",
     profile_id: PROFILE_EMPLOYER.id,
     profile: PROFILE_EMPLOYER,
 };
@@ -47,7 +47,7 @@ export const ROLE_CANDIDATE: Role = {
 export const ROLES: Role[] = [
     ROLE_ADMINISTRATOR,
     ROLE_HIRING_TEAM,
-    ROLE_CONTENT_MANAGER,
+    ROLE_INTERNAL_RECRUITER,
     ROLE_NO_ACCESS,
     ROLE_RECRUITER,
     ROLE_CANDIDATE,

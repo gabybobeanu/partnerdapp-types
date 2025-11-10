@@ -122,11 +122,11 @@ export const EDIT_KANBAN_STAGE_NAME: Right = {
     code: RightCode.EDIT_KANBAN_STAGE_NAME,
     name: "Edit Kanban Stage Name",
 };
-export const EDIT_KANBAN_STAGE_TYPE: Right = {
-    id: 25,
-    code: RightCode.EDIT_KANBAN_STAGE_TYPE,
-    name: "Edit Kanban Stage Type",
-};
+// export const EDIT_KANBAN_STAGE_TYPE: Right = {
+//     id: 25,
+//     code: RightCode.EDIT_KANBAN_STAGE_TYPE,
+//     name: "Edit Kanban Stage Type",
+// };
 export const DELETE_KANBAN_STAGE: Right = {
     id: 26,
     code: RightCode.DELETE_KANBAN_STAGE,
@@ -151,6 +151,66 @@ export const EDIT_KANBAN_STAGE_ORDER: Right = {
     id: 30,
     code: RightCode.EDIT_KANBAN_STAGE_ORDER,
     name: "Edit Kanban Stage Order",
+};
+export const VIEW_REVIEWS: Right = {
+    id: 31,
+    code: RightCode.VIEW_REVIEWS,
+    name: "View Reviews",
+};
+export const CREATE_REVIEW: Right = {
+    id: 32,
+    code: RightCode.CREATE_REVIEW,
+    name: "Create Review",
+};
+export const VIEW_MESSAGES: Right = {
+    id: 33,
+    code: RightCode.VIEW_MESSAGES,
+    name: "View Messages",
+};
+export const SEND_MESSAGE: Right = {
+    id: 34,
+    code: RightCode.SEND_MESSAGE,
+    name: "Send Message",
+};
+export const VIEW_NOTES: Right = {
+    id: 35,
+    code: RightCode.VIEW_NOTES,
+    name: "View Notes",
+};
+export const ADD_NOTE: Right = {
+    id: 36,
+    code: RightCode.ADD_NOTE,
+    name: "Add Note",
+};
+export const VIEW_TODOS: Right = {
+    id: 37,
+    code: RightCode.VIEW_TODOS,
+    name: "View Todos",
+};
+export const ADD_TODO: Right = {
+    id: 38,
+    code: RightCode.ADD_TODO,
+    name: "Add Todo",
+};
+export const VIEW_INTERVIEWS: Right = {
+    id: 39,
+    code: RightCode.VIEW_INTERVIEWS,
+    name: "View Interviews",
+};
+export const SCHEDULE_INTERVIEW: Right = {
+    id: 40,
+    code: RightCode.SCHEDULE_INTERVIEW,
+    name: "Schedule Interview",
+};
+export const EDIT_INTERVIEW: Right = {
+    id: 41,
+    code: RightCode.EDIT_INTERVIEW,
+    name: "Edit Interview",
+};
+export const CANCEL_INTERVIEW: Right = {
+    id: 42,
+    code: RightCode.CANCEL_INTERVIEW,
+    name: "Cancel Interview",
 };
 
 export const RIGHTS: Right[] = [
