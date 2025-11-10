@@ -191,6 +191,7 @@ export interface User {
 	stages?: Stage[];
 
 	recruiter?: Recruiter;
+	employer?: Employer;
 
 	received_reviews: Review[];
 	given_reviews: Review[];
