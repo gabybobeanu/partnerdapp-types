@@ -220,8 +220,8 @@ export interface Recruiter {
 export interface Employer {
 	id: number;
 	user: User;
-	// company_id: number;
-	// company: Company;
+	company_id: number;
+	company: Company;
 	signature: string;
 
 	created_jobs: Job[];
