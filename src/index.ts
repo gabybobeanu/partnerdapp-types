@@ -500,3 +500,15 @@ export interface Message {
 	text: string;
 	created_at: Date;
 }
+
+export interface ToDo {
+	id:    			number;
+	owner_id:		number;
+	owner:			User;
+	related_user_id:	number;
+	related_user:	User;
+	title:			string;
+	done:			boolean;
+	created_at:		Date;
+	due_at:			Date;
+}
