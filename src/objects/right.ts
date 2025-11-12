@@ -212,6 +212,16 @@ export const CANCEL_INTERVIEW: Right = {
     code: RightCode.CANCEL_INTERVIEW,
     name: "Cancel Interview",
 };
+export const EDIT_TODO: Right = {
+    id: 43,
+    code: RightCode.EDIT_TODO,
+    name: "Edit Todo",
+};
+export const DELETE_TODO: Right = {
+    id: 44,
+    code: RightCode.DELETE_TODO,
+    name: "Delete Todo",
+};
 
 export const RIGHTS: Right[] = [
     RIGHT_VIEW_JOBS_LIST,
