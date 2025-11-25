@@ -129,6 +129,8 @@ export interface Job {
 	updated_at?: Date;
 	created_by: number;
 	updated_by?: number;
+	creator?: Employer;
+	updater?: Employer;
 
 	job_applications?: any[];
 	stages?: Stage[];
