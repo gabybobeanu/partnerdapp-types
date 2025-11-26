@@ -123,3 +123,9 @@ export enum StageOwnerTypeName {
     EMPLOYER = 'Employer',
     RECRUITER = 'Recruiter',
 }
+
+export enum CalendarEventStatusName {
+    PENDING = 'Pending',
+    CONFIRMED = 'Confirmed',
+    REFUSED = 'Refused',
+}

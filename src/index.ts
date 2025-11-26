@@ -13,6 +13,7 @@ export * from "./objects/urgency.js";
 export * from "./objects/stage-category.js";
 export * from "./objects/stage-owner-type.js";
 export * from "./objects/stage-type.js";
+export * from "./objects/calendar-event-status.js";
 
 export interface Profile {
 	id: number;
@@ -470,6 +471,11 @@ export interface Stage {
 	applications?: CandidateJobApplication[];
 }
 
+export interface CalendarEventStatus {
+	id: number;
+	name: string;
+	calendar_events?: CalendarEvent[];
+}
 export interface CalendarEvent {
 	event_id: number;
 	job_id: number;
@@ -478,9 +484,14 @@ export interface CalendarEvent {
 	candidate: Candidate;
 	employer_id: number;
 	employer: Employer;
+	recruiter_id: number;
+	recruiter: Recruiter;
+	status_id: number;
+	status: CalendarEventStatus;
 	publicDetails: string;
 	privateDetails: string;
 	created_at: Date;
+	due_at: Date;
 }
 
 export interface Review {
