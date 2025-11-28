@@ -14,6 +14,7 @@ export * from "./objects/stage-category.js";
 export * from "./objects/stage-owner-type.js";
 export * from "./objects/stage-type.js";
 export * from "./objects/calendar-event-status.js";
+export * from "./objects/calendar-event-type.js";
 
 export interface Profile {
 	id: number;
@@ -476,20 +477,27 @@ export interface CalendarEventStatus {
 	name: string;
 	calendar_events?: CalendarEvent[];
 }
+export interface CalendarEventType {
+	id: number;
+	name: string;
+	calendar_events?: CalendarEvent[];
+}
 export interface CalendarEvent {
-	event_id: number;
+	id: number;
+	type_id: number;
+	type: CalendarEventType;
+	creator_id: number;
+	creator: User;
+	creator_profile_id: number;
+	target_user_id: number;
+	target_user: User;
+	target_user_profile_id: number;
 	job_id: number;
-  	job: Job;
-	candidate_id: number;
-	candidate: Candidate;
-	employer_id: number;
-	employer: Employer;
-	recruiter_id: number;
-	recruiter: Recruiter;
+	job: Job;
 	status_id: number;
 	status: CalendarEventStatus;
-	publicDetails: string;
-	privateDetails: string;
+	public_details: string;
+	private_details: string;
 	created_at: Date;
 	due_at: Date;
 }

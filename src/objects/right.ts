@@ -223,6 +223,32 @@ export const DELETE_TODO: Right = {
     name: "Delete Todo",
 };
 
+export const VIEW_EVENTS_LIST: Right = {
+    id: 45,
+    code: RightCode.VIEW_EVENTS_LIST,
+    name: "View Events List",
+};
+export const VIEW_EVENT: Right = {
+    id: 46,
+    code: RightCode.VIEW_EVENT,
+    name: "View Event",
+};
+export const CREATE_EVENT: Right = {
+    id: 47,
+    code: RightCode.CREATE_EVENT,
+    name: "Create Event",
+};
+export const EDIT_EVENT: Right = {
+    id: 48,
+    code: RightCode.EDIT_EVENT,
+    name: "Edit Event",
+};
+export const DELETE_EVENT: Right = {
+    id: 49,
+    code: RightCode.DELETE_EVENT,
+    name: "Delete Event",
+};
+
 export const RIGHTS: Right[] = [
     RIGHT_VIEW_JOBS_LIST,
     RIGHT_VIEW_JOB,
