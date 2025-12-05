@@ -284,19 +284,34 @@ export const RIGHT_CONFIRM_OTHER_EVENT: Right = {
     name: "Confirm Other Event",
 };
 export const RIGHT_DELETE_OWN_EVENT: Right = {
-    id: 56,
+    id: 57,
     code: RightCode.DELETE_OWN_EVENT,
     name: "Delete Own Event",
 };
 export const RIGHT_DELETE_TARGET_EVENT: Right = {
-    id: 57,
+    id: 58,
     code: RightCode.DELETE_TARGET_EVENT,
     name: "Delete Target Event",
 };
 export const RIGHT_DELETE_OTHER_EVENT: Right = {
-    id: 58,
+    id: 59,
     code: RightCode.DELETE_OTHER_EVENT,
     name: "Delete Other Event",
+};
+export const RIGHT_EDIT_OWN_EVENT: Right = {
+    id: 60,
+    code: RightCode.EDIT_OWN_EVENT,
+    name: "Edit Own Event",
+};
+export const RIGHT_EDIT_TARGET_EVENT: Right = {
+    id: 61,
+    code: RightCode.EDIT_TARGET_EVENT,
+    name: "Edit Target Event",
+};
+export const RIGHT_EDIT_OTHER_EVENT: Right = {
+    id: 62,
+    code: RightCode.EDIT_OTHER_EVENT,
+    name: "Edit Other Event",
 };
 
 export const RIGHTS: Right[] = [
@@ -358,4 +373,7 @@ export const RIGHTS: Right[] = [
     RIGHT_DELETE_OWN_EVENT,
     RIGHT_DELETE_TARGET_EVENT,
     RIGHT_DELETE_OTHER_EVENT,
+    RIGHT_EDIT_OWN_EVENT,
+    RIGHT_EDIT_TARGET_EVENT,
+    RIGHT_EDIT_OTHER_EVENT,
 ];
