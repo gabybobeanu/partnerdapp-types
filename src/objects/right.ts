@@ -107,146 +107,181 @@ export const RIGHT_VIEW_JOB_KANBAN: Right = {
     code: RightCode.VIEW_JOB_KANBAN,
     name: "View Job Kanban",
 };
-export const MOVE_CANDIDATE_TO_STAGE: Right = {
+export const RIGHT_MOVE_CANDIDATE_TO_STAGE: Right = {
     id: 22,
     code: RightCode.MOVE_CANDIDATE_TO_STAGE,
     name: "Move Candidate to Stage",
 };
-export const ADD_KANBAN_STAGE: Right = {
+export const RIGHT_ADD_KANBAN_STAGE: Right = {
     id: 23,
     code: RightCode.ADD_KANBAN_STAGE,
     name: "Add Kanban Stage",
 };
-export const EDIT_KANBAN_STAGE_NAME: Right = {
+export const RIGHT_EDIT_KANBAN_STAGE_NAME: Right = {
     id: 24,
     code: RightCode.EDIT_KANBAN_STAGE_NAME,
     name: "Edit Kanban Stage Name",
 };
-// export const EDIT_KANBAN_STAGE_TYPE: Right = {
+// export const RIGHT_EDIT_KANBAN_STAGE_TYPE: Right = {
 //     id: 25,
 //     code: RightCode.EDIT_KANBAN_STAGE_TYPE,
 //     name: "Edit Kanban Stage Type",
 // };
-export const DELETE_KANBAN_STAGE: Right = {
+export const RIGHT_DELETE_KANBAN_STAGE: Right = {
     id: 26,
     code: RightCode.DELETE_KANBAN_STAGE,
     name: "Delete Kanban Stage",
 };
-export const HIRE_CANDIDATE: Right = {
+export const RIGHT_HIRE_CANDIDATE: Right = {
     id: 27,
     code: RightCode.HIRE_CANDIDATE,
     name: "Hire Candidate",
 };
-export const REJECT_CANDIDATE: Right = {
+export const RIGHT_REJECT_CANDIDATE: Right = {
     id: 28,
     code: RightCode.REJECT_CANDIDATE,
     name: "Reject Candidate",
 };
-export const ADD_KANBAN_STAGE_TRIGGER: Right = {
+export const RIGHT_ADD_KANBAN_STAGE_TRIGGER: Right = {
     id: 29,
     code: RightCode.ADD_KANBAN_STAGE_TRIGGER,
     name: "Add Kanban Stage Trigger",
 };
-export const EDIT_KANBAN_STAGE_ORDER: Right = {
+export const RIGHT_EDIT_KANBAN_STAGE_ORDER: Right = {
     id: 30,
     code: RightCode.EDIT_KANBAN_STAGE_ORDER,
     name: "Edit Kanban Stage Order",
 };
-export const VIEW_REVIEWS: Right = {
+export const RIGHT_VIEW_REVIEWS: Right = {
     id: 31,
     code: RightCode.VIEW_REVIEWS,
     name: "View Reviews",
 };
-export const CREATE_REVIEW: Right = {
+export const RIGHT_CREATE_REVIEW: Right = {
     id: 32,
     code: RightCode.CREATE_REVIEW,
     name: "Create Review",
 };
-export const VIEW_MESSAGES: Right = {
+export const RIGHT_VIEW_MESSAGES: Right = {
     id: 33,
     code: RightCode.VIEW_MESSAGES,
     name: "View Messages",
 };
-export const SEND_MESSAGE: Right = {
+export const RIGHT_SEND_MESSAGE: Right = {
     id: 34,
     code: RightCode.SEND_MESSAGE,
     name: "Send Message",
 };
-export const VIEW_NOTES: Right = {
+export const RIGHT_VIEW_NOTES: Right = {
     id: 35,
     code: RightCode.VIEW_NOTES,
     name: "View Notes",
 };
-export const ADD_NOTE: Right = {
+export const RIGHT_ADD_NOTE: Right = {
     id: 36,
     code: RightCode.ADD_NOTE,
     name: "Add Note",
 };
-export const VIEW_TODOS: Right = {
+export const RIGHT_VIEW_TODOS: Right = {
     id: 37,
     code: RightCode.VIEW_TODOS,
     name: "View Todos",
 };
-export const ADD_TODO: Right = {
+export const RIGHT_ADD_TODO: Right = {
     id: 38,
     code: RightCode.ADD_TODO,
     name: "Add Todo",
 };
-export const VIEW_INTERVIEWS: Right = {
-    id: 39,
-    code: RightCode.VIEW_INTERVIEWS,
-    name: "View Interviews",
-};
-export const SCHEDULE_INTERVIEW: Right = {
-    id: 40,
-    code: RightCode.SCHEDULE_INTERVIEW,
-    name: "Schedule Interview",
-};
-export const EDIT_INTERVIEW: Right = {
-    id: 41,
-    code: RightCode.EDIT_INTERVIEW,
-    name: "Edit Interview",
-};
-export const CANCEL_INTERVIEW: Right = {
-    id: 42,
-    code: RightCode.CANCEL_INTERVIEW,
-    name: "Cancel Interview",
-};
-export const EDIT_TODO: Right = {
+// export const RIGHT_VIEW_INTERVIEWS: Right = {
+//     id: 39,
+//     code: RightCode.VIEW_INTERVIEWS,
+//     name: "View Interviews",
+// };
+// export const RIGHT_SCHEDULE_INTERVIEW: Right = {
+//     id: 40,
+//     code: RightCode.SCHEDULE_INTERVIEW,
+//     name: "Schedule Interview",
+// };
+// export const RIGHT_EDIT_INTERVIEW: Right = {
+//     id: 41,
+//     code: RightCode.EDIT_INTERVIEW,
+//     name: "Edit Interview",
+// };
+// export const RIGHT_CANCEL_INTERVIEW: Right = {
+//     id: 42,
+//     code: RightCode.CANCEL_INTERVIEW,
+//     name: "Cancel Interview",
+// };
+export const RIGHT_EDIT_TODO: Right = {
     id: 43,
     code: RightCode.EDIT_TODO,
     name: "Edit Todo",
 };
-export const DELETE_TODO: Right = {
+export const RIGHT_DELETE_TODO: Right = {
     id: 44,
     code: RightCode.DELETE_TODO,
     name: "Delete Todo",
 };
 
-export const VIEW_EVENTS_LIST: Right = {
+export const RIGHT_VIEW_EVENTS_LIST: Right = {
     id: 45,
     code: RightCode.VIEW_EVENTS_LIST,
     name: "View Events List",
 };
-export const VIEW_EVENT: Right = {
+export const RIGHT_VIEW_EVENT: Right = {
     id: 46,
     code: RightCode.VIEW_EVENT,
     name: "View Event",
 };
-export const CREATE_EVENT: Right = {
+export const RIGHT_CREATE_EVENT: Right = {
     id: 47,
     code: RightCode.CREATE_EVENT,
     name: "Create Event",
 };
-export const EDIT_EVENT: Right = {
+export const RIGHT_RESCHEDULE_OWN_EVENT: Right = {
     id: 48,
-    code: RightCode.EDIT_EVENT,
-    name: "Edit Event",
+    code: RightCode.RESCHEDULE_OWN_EVENT,
+    name: "Reschedule Own Event",
 };
-export const DELETE_EVENT: Right = {
+export const RIGHT_REFUSE_OWN_EVENT: Right = {
     id: 49,
-    code: RightCode.DELETE_EVENT,
-    name: "Delete Event",
+    code: RightCode.REFUSE_OWN_EVENT,
+    name: "Refuse Own Event",
+};
+export const RIGHT_CONFIRM_OWN_EVENT: Right = {
+    id: 50,
+    code: RightCode.CONFIRM_OWN_EVENT,
+    name: "Confirm Own Event",
+};
+export const RIGHT_RESCHEDULE_TARGET_EVENT: Right = {
+    id: 51,
+    code: RightCode.RESCHEDULE_TARGET_EVENT,
+    name: "Reschedule Target Event",
+};
+export const RIGHT_REFUSE_TARGET_EVENT: Right = {
+    id: 52,
+    code: RightCode.REFUSE_TARGET_EVENT,
+    name: "Refuse Target Event",
+};
+export const RIGHT_CONFIRM_TARGET_EVENT: Right = {
+    id: 53,
+    code: RightCode.CONFIRM_TARGET_EVENT,
+    name: "Confirm Target Event",
+};
+export const RIGHT_RESCHEDULE_OTHER_EVENT: Right = {
+    id: 54,
+    code: RightCode.RESCHEDULE_OTHER_EVENT,
+    name: "Reschedule Other Event",
+};
+export const RIGHT_REFUSE_OTHER_EVENT: Right = {
+    id: 55,
+    code: RightCode.REFUSE_OTHER_EVENT,
+    name: "Refuse Other Event",
+};
+export const RIGHT_CONFIRM_OTHER_EVENT: Right = {
+    id: 56,
+    code: RightCode.CONFIRM_OTHER_EVENT,
+    name: "Confirm Other Event",
 };
 
 export const RIGHTS: Right[] = [
@@ -270,4 +305,39 @@ export const RIGHTS: Right[] = [
     RIGHT_APPROVE_RECRUITER,
     RIGHT_REJECT_RECRUITER,
     RIGHT_AUTOAPPROVE_RECRUITER,
+    RIGHT_MOVE_CANDIDATE_TO_STAGE,
+    RIGHT_ADD_KANBAN_STAGE,
+    RIGHT_EDIT_KANBAN_STAGE_NAME,
+    RIGHT_DELETE_KANBAN_STAGE,
+    RIGHT_HIRE_CANDIDATE,
+    RIGHT_REJECT_CANDIDATE,
+    RIGHT_ADD_KANBAN_STAGE_TRIGGER,
+    RIGHT_EDIT_KANBAN_STAGE_ORDER,
+    RIGHT_VIEW_REVIEWS,
+    RIGHT_CREATE_REVIEW,
+    RIGHT_VIEW_MESSAGES,
+    RIGHT_SEND_MESSAGE,
+    RIGHT_VIEW_NOTES,
+    RIGHT_ADD_NOTE,
+    RIGHT_VIEW_TODOS,
+    RIGHT_ADD_TODO,
+    // RIGHT_VIEW_INTERVIEWS,
+    // RIGHT_SCHEDULE_INTERVIEW,
+    // RIGHT_EDIT_INTERVIEW,
+    // RIGHT_CANCEL_INTERVIEW,
+    RIGHT_EDIT_TODO,
+    RIGHT_DELETE_TODO,
+
+    RIGHT_VIEW_EVENTS_LIST,
+    RIGHT_VIEW_EVENT,
+    RIGHT_CREATE_EVENT,
+    RIGHT_RESCHEDULE_OWN_EVENT,
+    RIGHT_REFUSE_OWN_EVENT,
+    RIGHT_CONFIRM_OWN_EVENT,
+    RIGHT_RESCHEDULE_TARGET_EVENT,
+    RIGHT_REFUSE_TARGET_EVENT,
+    RIGHT_CONFIRM_TARGET_EVENT,
+    RIGHT_RESCHEDULE_OTHER_EVENT,
+    RIGHT_REFUSE_OTHER_EVENT,
+    RIGHT_CONFIRM_OTHER_EVENT,
 ];
