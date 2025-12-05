@@ -283,6 +283,21 @@ export const RIGHT_CONFIRM_OTHER_EVENT: Right = {
     code: RightCode.CONFIRM_OTHER_EVENT,
     name: "Confirm Other Event",
 };
+export const RIGHT_DELETE_OWN_EVENT: Right = {
+    id: 56,
+    code: RightCode.DELETE_OWN_EVENT,
+    name: "Delete Own Event",
+};
+export const RIGHT_DELETE_TARGET_EVENT: Right = {
+    id: 57,
+    code: RightCode.DELETE_TARGET_EVENT,
+    name: "Delete Target Event",
+};
+export const RIGHT_DELETE_OTHER_EVENT: Right = {
+    id: 58,
+    code: RightCode.DELETE_OTHER_EVENT,
+    name: "Delete Other Event",
+};
 
 export const RIGHTS: Right[] = [
     RIGHT_VIEW_JOBS_LIST,
@@ -340,4 +355,7 @@ export const RIGHTS: Right[] = [
     RIGHT_RESCHEDULE_OTHER_EVENT,
     RIGHT_REFUSE_OTHER_EVENT,
     RIGHT_CONFIRM_OTHER_EVENT,
+    RIGHT_DELETE_OWN_EVENT,
+    RIGHT_DELETE_TARGET_EVENT,
+    RIGHT_DELETE_OTHER_EVENT,
 ];
