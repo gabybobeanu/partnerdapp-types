@@ -171,7 +171,7 @@ export interface Pronoun {
 }
 export interface User {
 	id: number;
-	clerk_id: number;
+	clerk_id: string;
 	email: string;
 	name: string;
 	surname: string;
@@ -196,6 +196,7 @@ export interface User {
 
 	recruiter?: Recruiter;
 	employer?: Employer;
+	candidate?: Candidate;
 
 	received_reviews: Review[];
 	given_reviews: Review[];
