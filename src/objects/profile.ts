@@ -1,7 +1,11 @@
 import { ProfileCode } from "../constants.js";
 import type { Profile } from "../index.js";
 
-
+export const PROFILE_ADMIN: Profile = {
+    id: -1,
+    code: ProfileCode.ADMIN,
+    name: "Platform Administrator",
+};
 export const PROFILE_EMPLOYER: Profile = {
     id: 1,
     code: ProfileCode.EMPLOYER,
@@ -18,6 +22,7 @@ export const PROFILE_CANDIDATE: Profile = {
     name: "Candidate",
 };
 export const PROFILES: Profile[] = [
+    PROFILE_ADMIN,
     PROFILE_RECRUITER,
     PROFILE_EMPLOYER,
     PROFILE_CANDIDATE,

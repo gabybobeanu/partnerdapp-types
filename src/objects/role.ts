@@ -1,4 +1,12 @@
-import { PROFILE_EMPLOYER, RoleCode, type Role } from "../index.js";
+import { PROFILE_ADMIN, PROFILE_EMPLOYER, RoleCode, type Role } from "../index.js";
+
+export const ROLE_PLATFORM_ADMIN: Role = {
+    id: -1,
+    code: RoleCode.PLATFORM_ADMIN,
+    name: "Platform Administrator",
+    profile_id: PROFILE_ADMIN.id,
+    profile: PROFILE_ADMIN,
+};
 
 export const ROLE_ADMINISTRATOR: Role = {
     id: 1,
@@ -45,6 +53,7 @@ export const ROLE_CANDIDATE: Role = {
 };
 
 export const ROLES: Role[] = [
+    ROLE_PLATFORM_ADMIN,
     ROLE_ADMINISTRATOR,
     ROLE_HIRING_TEAM,
     ROLE_INTERNAL_RECRUITER,
