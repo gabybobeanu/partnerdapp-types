@@ -344,6 +344,36 @@ export interface Candidate {
 	applications: CandidateJobApplication[];
 	ideal_jobs: IdealJob[];
 	pool: CandidatePool[];
+	candidate_skills: CandidateSkill[];
+	candidate_tags: CandidateTag[];
+	privacy: CandidatePrivacy;
+}
+
+export interface CandidatePrivacy {
+	candidate_id: number;
+	candidate: Candidate;
+	renewed_at: Date;
+	expires_at: Date;
+	reminder_at: Date;
+	reminder_mail_sent_at?: Date;
+	removal_requested: boolean;
+	removal_requested_at?: Date;
+	removed_at?: Date;
+}
+
+export interface CandidateSkill {
+	candidate_id: number;
+	candidate: Candidate;
+	skill_id: number;
+	skill: Skill;
+	position: number;
+}
+
+export interface CandidateTag {
+	candidate_id: number;
+	candidate: Candidate;
+	tag_id: number;
+	tag: Tag;
 }
 
 export interface CandidatePool {
