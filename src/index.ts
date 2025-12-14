@@ -266,6 +266,7 @@ export interface Company {
 	phone?: string;
 	logo?: number[] | undefined;
 	description?: string;
+	is_validated?: boolean;
 
 	locations: CompanyLocation[];
 
