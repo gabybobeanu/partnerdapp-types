@@ -250,8 +250,6 @@ export interface CompanyLocation {
 	country?: string
 	country_code?: string;
 	postal_code?: string;
-	address_1?: string;
-	address_2?: string;
 }
 export interface Company {
 	id: number;
@@ -269,6 +267,8 @@ export interface Company {
 	is_validated?: boolean;
 
 	locations: CompanyLocation[];
+	address_1?: string;
+	address_2?: string;
 
 	employers: Employer[];
 	recruiters: Recruiter[];
