@@ -570,7 +570,7 @@ export interface ToDo {
 
 export interface FavoriteJob {
 	job_id: number;
-	job: Job;
+	job?: Job;
 	user_id: number;
-	user: User;
+	user?: User;
 }
