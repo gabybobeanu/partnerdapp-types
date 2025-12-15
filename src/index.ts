@@ -136,6 +136,7 @@ export interface Job {
 
 	job_applications?: any[];
 	stages?: Stage[];
+	favorite_for_users?: FavoriteJob[];
 }
 
 export interface JobApplicationStatus {
@@ -203,6 +204,7 @@ export interface User {
 
 	sent_messages: Message[];
 	received_messages: Message[];
+	favorite_jobs: FavoriteJob[];
 
 	created_at: Date;
 	updated_at?: Date;
@@ -564,4 +566,11 @@ export interface ToDo {
 	done:			boolean;
 	created_at:		Date;
 	due_at:			Date;
+}
+
+export interface FavoriteJob {
+	job_id: number;
+	job: Job;
+	user_id: number;
+	user: User;
 }
