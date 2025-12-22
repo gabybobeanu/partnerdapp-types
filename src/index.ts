@@ -20,6 +20,9 @@ export interface Profile {
 	id: number;
 	code: ProfileCode;
 	name: string;
+	roles?: Role[];
+	users?: User[];
+	notifTypes?: any[]; //TODO: define notification type
 }
 
 export interface OptionItem {
@@ -48,23 +51,29 @@ export interface PresenceStatus {
 	id: number;
 	code: PresenceStatusCode;
 	name: string;
+	job_presence_statuses?: JobPresenceStatus[];
+	ideal_job_presence_statuses?: IdealJobPresenceStatus[];
 }
 
 export interface JobType {
 	id: number;
 	code: JobTypeCode;
 	name: string;
+	jobs?: Job[];
+	ideal_job_types?: IdealJobType[];
 }
 
 export interface Urgency {
 	id: number;
 	code: UrgencyCode;
 	name: string;
+	jobs?: Job[];
 }
 export interface TagType {
 	id: number;
 	code: TagTypeCode;
 	name: string;
+	tags?: Tag[];
 }
 
 export interface Tag {
@@ -72,6 +81,8 @@ export interface Tag {
 	name: string;
 	tag_type_id: number;
 	tag_type: TagType;
+	job_tags?: JobTag[];
+	candidate_tags?: CandidateTag[];
 }
 
 export interface JobTag {
@@ -85,6 +96,7 @@ export interface SkillType {
 	id: number;
 	code: SkillTypeCode;
 	name: string;
+	skills?: Skill[];
 }
 
 export interface Skill {
@@ -92,6 +104,9 @@ export interface Skill {
 	name: string;
 	skill_type_id: number;
 	skill_type: SkillType;
+
+	job_skills?: JobSkill[];
+	candidate_skills?: CandidateSkill[];
 }
 
 export interface JobSkill {
@@ -134,15 +149,31 @@ export interface Job {
 	creator?: Employer;
 	updater?: Employer;
 
-	job_applications?: any[];
+	job_applications?: JobApplication[];
+	invites?: CandidateInvite[];
 	stages?: Stage[];
+	calendar_events?: CalendarEvent[];
 	favorite_for_users?: FavoriteJob[];
 }
 
+export interface JobPresenceStatus {
+	job_id: number;
+	job: Job;
+	presence_status_id: number;
+	presence_status: PresenceStatus;
+}
+
+export interface JobLanguage {
+	job_id: number;
+	job: Job;
+	language: string;
+	language_lvl: string;
+}
 export interface JobApplicationStatus {
 	id: number;
 	code: JobApplicationStatusCode;
 	name: string;
+	job_applications?: JobApplication[];
 }
 
 export interface JobApplication {
@@ -153,26 +184,31 @@ export interface JobApplication {
 	status_id: number;
 	status: JobApplicationStatus;
 	applied_at: Date;
+	candidateApplications?: CandidateJobApplication[];
 }
 
 export interface Title {
 	id: number;
 	code: string;
 	name: string;
+	users?: User[];
 }
 export interface Gender {
 	id: number;
 	code: string;
 	name: string;
+	users?: User[];
 }
 export interface Pronoun {
 	id: number;
 	code: string;
 	name: string;
+	users?: User[];
 }
 export interface User {
 	id: number;
 	clerk_id: string;
+	is_active?: boolean;
 	email: string;
 	name: string;
 	surname: string;
@@ -206,6 +242,18 @@ export interface User {
 	received_messages: Message[];
 	favorite_jobs: FavoriteJob[];
 
+	owned_todos: ToDo[];
+	related_todos: ToDo[];
+
+	created_events: CalendarEvent[];
+	target_events: CalendarEvent[];
+
+	performed_activities: any[]; //TODO: define activity type
+	targeted_activities: any[];
+
+	notifications: any[]; //TODO: define notification type
+	notifPreferences: any[]; //TODO: define notification preference type
+
 	created_at: Date;
 	updated_at?: Date;
 }
@@ -219,9 +267,11 @@ export interface Recruiter {
 	signature: string;
 	summary?: string;
 	invoice_agreement: boolean;
-	job_applications: JobApplication[];
 
+	job_applications: JobApplication[];
 	autoApprovals: AutoApproval[];
+	invites: CandidateInvite[];
+	pool: CandidatePool[];
 }
 
 export interface Employer {
@@ -274,6 +324,39 @@ export interface Company {
 
 	employers: Employer[];
 	recruiters: Recruiter[];
+
+	invites?: EmployerInvite[];
+}
+
+export interface SeniorityCategory {
+	id: number;
+	name: string;
+	level: number;
+	seniorities: Seniority[];
+}
+
+export interface Seniority {
+	id: number;
+	name: string;
+	categ_id: number;
+	category: SeniorityCategory;
+	jobs: Job[];
+}
+
+export interface DepartmentCategory {
+	id: number;
+	name: string;
+	level: number;
+	departments: Department[];
+}
+
+export interface Department {
+	id: number;
+	name: string;
+	categ_id: number;
+	category: DepartmentCategory;
+	jobs: Job[];
+	ideal_job_departments: IdealJobDepartment[];
 }
 
 export interface Role {
@@ -304,16 +387,16 @@ export interface EmployerInvite {
 	new_user_id: number | null;
 }
 
-export interface JobInvite {
+export interface CandidateInvite {
 	id: number;
 	token: string;
-	job_id: number;
-	job: Job;
+	job_id?: number;
+	job?: Job;
 	recruiter_id: number;
 	recruiter: Recruiter;
 	candidate_email: string;
-	candidate_name: string;
-	status_id: number;
+	candidate_name?: string;
+	candidate_surname?: string;
 	created_at: Date;
 	consumed_at?: Date;
 	expires_at?: Date;
@@ -343,7 +426,8 @@ export interface Candidate {
 	country?: string;
 	country_code?: string;
 	user: User;
-	resumes: any[];
+	resumes: any[]; //TODO: define resume type
+	invites: CandidateInvite[];
 	applications: CandidateJobApplication[];
 	ideal_jobs: IdealJob[];
 	pool: CandidatePool[];
@@ -394,6 +478,8 @@ export interface CandidateJobApplication {
 	candidate: Candidate;
 	stage_id?: number;
 	stage?: Stage;
+	recruiter_stage_id?: number;
+	recruiter_stage?: Stage;
 	active?: boolean;
 }
 
@@ -464,8 +550,8 @@ export interface Benefit {
 
 
 export interface JobBenefit {
-	id: number;
 	job_id: number;
+	job: Job;
 	benefit_id: number;
 	benefit: Benefit;
 }
@@ -504,6 +590,7 @@ export interface Stage {
 	sequence?: number;
 
 	applications?: CandidateJobApplication[];
+	applications2?: CandidateJobApplication[]; 
 }
 
 export interface CalendarEventStatus {
@@ -526,12 +613,12 @@ export interface CalendarEvent {
 	target_user_id: number;
 	target_user: User;
 	target_user_profile_id: number;
-	job_id: number;
-	job: Job;
+	job_id?: number;
+	job?: Job;
 	status_id: number;
 	status: CalendarEventStatus;
-	public_details: string;
-	private_details: string;
+	public_details?: string;
+	private_details?: string;
 	created_at: Date;
 	due_at: Date;
 }
@@ -573,4 +660,5 @@ export interface FavoriteJob {
 	job?: Job;
 	user_id: number;
 	user?: User;
+	created_at: Date;
 }
