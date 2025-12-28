@@ -140,7 +140,7 @@ export interface Job {
 	job_tags?: JobTag[]; // includes free tags and skills
 	job_skills?: JobSkill[]; // includes technical, other, bonus
 	benefits?: OptionItem[];
-	job_benefits?: any[];
+	job_benefits?: JobBenefit[];
 
 	created_at: Date;
 	updated_at?: Date;
@@ -554,6 +554,7 @@ export interface JobBenefit {
 	job: Job;
 	benefit_id: number;
 	benefit: Benefit;
+	position: number;
 }
 
 export interface StageType {
