@@ -16,6 +16,7 @@ export * from "./objects/stage-type.js";
 export * from "./objects/calendar-event-status.js";
 export * from "./objects/calendar-event-type.js";
 
+
 export interface Profile {
 	id: number;
 	code: ProfileCode;
