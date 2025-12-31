@@ -155,6 +155,7 @@ export interface Job {
 	stages?: Stage[];
 	calendar_events?: CalendarEvent[];
 	favorite_for_users?: FavoriteJob[];
+	job_hires?: JobHire[];
 }
 
 export interface JobPresenceStatus {
@@ -273,6 +274,7 @@ export interface Recruiter {
 	autoApprovals: AutoApproval[];
 	invites: CandidateInvite[];
 	pool: CandidatePool[];
+	job_hires?: JobHire[];
 }
 
 export interface Employer {
@@ -286,6 +288,7 @@ export interface Employer {
 	updated_jobs: Job[];
 
 	autoApprovals: AutoApproval[];
+	job_hires?: JobHire[];
 }
 
 export interface AutoApproval {
@@ -435,6 +438,7 @@ export interface Candidate {
 	candidate_skills: CandidateSkill[];
 	candidate_tags: CandidateTag[];
 	privacy: CandidatePrivacy;
+	job_hires?: JobHire[];
 }
 
 export interface CandidatePrivacy {
@@ -482,6 +486,7 @@ export interface CandidateJobApplication {
 	recruiter_stage_id?: number;
 	recruiter_stage?: Stage;
 	active?: boolean;
+	hired?: boolean;
 }
 
 export interface IdealJob {
@@ -663,4 +668,22 @@ export interface FavoriteJob {
 	user_id: number;
 	user?: User;
 	created_at: Date;
+}
+
+export interface JobHire {
+	id: number;
+	job_id: number;
+	job?: Job;
+	candidate_id: number;
+	candidate?: Candidate;
+	recruiter_id: number;
+	recruiter?: Recruiter;
+	
+	salary: number;
+	currency_code: string;
+	starting_date: Date;
+
+	hired_by: number;
+	employer: Employer;
+	hired_at: Date;
 }
