@@ -385,6 +385,12 @@ export const RIGHT__EMPLOYER__TEAM_LIST__VIEW: Right = {
     name: "View Employer Teams List",
 };
 
+export const RIGHT__EMPLOYER__TEAM_MEMBER__EDIT: Right = {
+    id: 5102102,
+    code: RightCode.EMPLOYER__TEAM_MEMBER__EDIT,
+    name: "Edit Member",
+};
+
 export const RIGHT__EMPLOYER__TEAM_MEMBER__DELETE: Right = {
     id: 5102103,
     code: RightCode.EMPLOYER__TEAM_MEMBER__DELETE,
