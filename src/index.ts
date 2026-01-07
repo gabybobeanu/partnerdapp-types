@@ -15,7 +15,7 @@ export * from "./objects/stage-owner-type.js";
 export * from "./objects/stage-type.js";
 export * from "./objects/calendar-event-status.js";
 export * from "./objects/calendar-event-type.js";
-
+export * from "./objects/activity-type.js";
 
 export interface Profile {
 	id: number;
@@ -300,7 +300,7 @@ export interface AutoApproval {
 
 export interface CompanyLocation {
 	id: number;
-	company_id: number;		
+	company_id: number;
 	company: Company
 	city?: string
 	country?: string
@@ -597,7 +597,7 @@ export interface Stage {
 	sequence?: number;
 
 	applications?: CandidateJobApplication[];
-	applications2?: CandidateJobApplication[]; 
+	applications2?: CandidateJobApplication[];
 }
 
 export interface CalendarEventStatus {
@@ -651,15 +651,15 @@ export interface Message {
 }
 
 export interface ToDo {
-	id:    			number;
-	owner_id:		number;
-	owner:			User;
-	related_user_id:	number;
-	related_user:	User;
-	title:			string;
-	done:			boolean;
-	created_at:		Date;
-	due_at:			Date;
+	id: number;
+	owner_id: number;
+	owner: User;
+	related_user_id: number;
+	related_user: User;
+	title: string;
+	done: boolean;
+	created_at: Date;
+	due_at: Date;
 }
 
 export interface FavoriteJob {
@@ -678,7 +678,7 @@ export interface JobHire {
 	candidate?: Candidate;
 	recruiter_id: number;
 	recruiter?: Recruiter;
-	
+
 	salary: number;
 	currency_code: string;
 	starting_date: Date;
@@ -686,4 +686,39 @@ export interface JobHire {
 	hired_by: number;
 	employer: Employer;
 	hired_at: Date;
+}
+
+export interface ActivityType {
+	id: number;
+	code: string;
+	name: string;
+	activity_message?: string;
+	detail_message_1?: string;
+	detail_message_2?: string;
+	// activities			ActivityLog[]
+}
+
+export interface ActivityLog {
+	id: number;
+	activity_type_id: number;
+	activity_type: ActivityType;
+
+	actor_id: number;
+	actor: User;
+	actor_type: string;
+
+	target_user_id?: number;
+	target_user?: User;
+	target_user_type?: string;
+
+	entity_job_id?: number;
+	entity_job?: Job;
+	entity_company_id?: number;
+	entity_company?: Company;
+
+	activity_message_data?: string;
+	detail_message_1_data?: string;
+	detail_message_2_data?: string;
+
+	created_at: Date;
 }
