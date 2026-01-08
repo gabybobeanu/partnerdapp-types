@@ -719,6 +719,7 @@ export interface ActivityLog {
 	activity_message_data?: string;
 	detail_message_1_data?: string;
 	detail_message_2_data?: string;
+	metadata?: string;
 
 	created_at: Date;
 }
