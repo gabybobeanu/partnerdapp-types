@@ -692,10 +692,7 @@ export interface ActivityType {
 	id: number;
 	code: string;
 	name: string;
-	activity_message?: string;
-	detail_message_1?: string;
-	detail_message_2?: string;
-	// activities			ActivityLog[]
+	activities?: ActivityLog[];
 }
 
 export interface ActivityLog {
@@ -711,14 +708,9 @@ export interface ActivityLog {
 	target_user?: User;
 	target_user_type?: string;
 
-	entity_job_id?: number;
-	entity_job?: Job;
-	entity_company_id?: number;
-	entity_company?: Company;
+	activity_job_id?: number;
+	activity_job?: Job;
 
-	activity_message_data?: string;
-	detail_message_1_data?: string;
-	detail_message_2_data?: string;
 	metadata?: string;
 
 	created_at: Date;
