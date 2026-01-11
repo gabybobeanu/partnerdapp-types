@@ -710,7 +710,6 @@ export interface ActivityLog {
 
 	activity_job_id?: number;
 	activity_job?: Job;
-	
 	metadata?: string;
 
 	created_at: Date;
