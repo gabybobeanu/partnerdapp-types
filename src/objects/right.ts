@@ -109,6 +109,12 @@ export const RIGHT__JOB_APPLICATION__CANDIDATE__DELETE: Right = {
     name: "Delete Candidate from Job Application",
 };
 
+export const RIGHT__JOB_APPLICATION__CANDIDATE__REJECT: Right = {
+    id: 1103104,
+    code: RightCode.JOB_APPLICATION__CANDIDATE__REJECT,
+    name: "Reject Candidate from Job Application",
+};
+
 export const RIGHT__STAGE__LIST__VIEW: Right = {
     id: 1200000,
     code: RightCode.STAGE__LIST__VIEW,
@@ -500,6 +506,7 @@ export const RIGHTS: Right[] = [
     RIGHT__JOB_APPLICATION__CANDIDATE__ADD,
     RIGHT__JOB_APPLICATION__CANDIDATE__EDIT,
     RIGHT__JOB_APPLICATION__CANDIDATE__DELETE,
+    RIGHT__JOB_APPLICATION__CANDIDATE__REJECT,
     RIGHT__STAGE__LIST__VIEW,
     RIGHT__STAGE__ITEM__CREATE,
     RIGHT__STAGE__ITEM__EDIT,
