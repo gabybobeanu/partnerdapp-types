@@ -133,6 +133,7 @@ export interface Job {
 	max_salary?: number;
 	visible_salary?: boolean;
 	currency_code?: string;
+	currency_symbol?: string;
 
 	presenceStatuses: OptionItem[];
 	job_presence_statuses?: any[];
@@ -317,6 +318,7 @@ export interface Company {
 	bank_name?: string;
 	swift_code?: string;
 	currency_code?: string;
+	currency_symbol?: string;
 	phone?: string;
 	logo?: number[] | undefined;
 	description?: string;
@@ -494,6 +496,7 @@ export interface IdealJob {
 	candidate: Candidate;
 	location?: string;
 	currency_code?: string;
+	currency_symbol?: string;
 	salary?: number;
 	vacation_days?: number;
 	relocate?: boolean;
@@ -681,6 +684,7 @@ export interface JobHire {
 
 	salary: number;
 	currency_code: string;
+	currency_symbol: string;
 	starting_date: Date;
 
 	hired_by: number;
