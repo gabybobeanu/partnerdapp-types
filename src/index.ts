@@ -123,7 +123,9 @@ export interface Job {
 	title: string;
 	seniority: OptionItem;
 	department: OptionItem;
-	location: OptionItem;
+	city?: string;
+	country?: string;
+	country_code?: string;
 	job_type: OptionItem;
 	description: string;
 	urgency: OptionItem;
@@ -494,7 +496,9 @@ export interface CandidateJobApplication {
 export interface IdealJob {
 	id: number;
 	candidate: Candidate;
-	location?: string;
+	city?: string;
+	country?: string;
+	country_code?: string;
 	currency_code?: string;
 	currency_symbol?: string;
 	salary?: number;
