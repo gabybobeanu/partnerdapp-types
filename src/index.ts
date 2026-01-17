@@ -492,6 +492,7 @@ export interface CandidateJobApplication {
 	recruiter_stage?: Stage;
 	active?: boolean;
 	hired?: boolean;
+	created_at?: Date;
 }
 
 export interface IdealJob {
