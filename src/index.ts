@@ -434,6 +434,7 @@ export interface Candidate {
 	country?: string;
 	country_code?: string;
 	user: User;
+	last_activity_at?: Date;
 	resumes: any[]; //TODO: define resume type
 	invites: CandidateInvite[];
 	applications: CandidateJobApplication[];
