@@ -16,6 +16,8 @@ export * from "./objects/stage-type.js";
 export * from "./objects/calendar-event-status.js";
 export * from "./objects/calendar-event-type.js";
 export * from "./objects/activity-type.js";
+export * from "./objects/notification-category.js";
+export * from "./objects/notification-type.js";
 
 export interface Profile {
 	id: number;
@@ -724,4 +726,37 @@ export interface ActivityLog {
 	metadata?: string;
 
 	created_at: Date;
+}
+
+export interface NotificationCategory {
+	id: number;
+	name: string;
+	code: string;
+	notifications?: Notification[];
+}
+
+export interface NotificationType {
+	id: number;
+	notif_categ_id: number;
+	notif_categ: NotificationCategory;
+	receiver_profile_id: number;
+	receiver_profile: Profile;
+	code: string;
+	description?: string;
+	default_enabled?: boolean;
+	notifications?: Notification[];
+}
+
+export interface Notification {
+	id: number;
+	notif_type_id: number;
+	notif_type: NotificationType;
+	notif_receiver_id: number;
+	notif_receiver: User;
+	title: string;
+	message: string;
+	link?: string;
+	is_read?: boolean;
+	created_at: Date;
+	updated_at?: Date;
 }
