@@ -772,4 +772,6 @@ export interface Notification {
 	is_read?: boolean;
 	created_at: Date;
 	updated_at?: Date;
+	activity_id?: number;
+	activity?: ActivityLog;
 }
