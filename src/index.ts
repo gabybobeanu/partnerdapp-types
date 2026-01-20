@@ -17,6 +17,7 @@ export * from "./objects/calendar-event-status.js";
 export * from "./objects/calendar-event-type.js";
 export * from "./objects/activity-type.js";
 export * from "./objects/notification-category.js";
+export * from "./objects/notification-group.js";
 export * from "./objects/notification-type.js";
 
 export interface Profile {
@@ -732,18 +733,30 @@ export interface NotificationCategory {
 	id: number;
 	name: string;
 	code: string;
-	notifications?: Notification[];
+	notification_types?: NotificationType[];
+}
+
+export interface NotificationGroup {
+	id: number;
+	name: string;
+	code: string;
+	description?: string;
+	default_enabled?: boolean;
+	notification_types?: NotificationType[];
 }
 
 export interface NotificationType {
 	id: number;
 	notif_categ_id: number;
 	notif_categ: NotificationCategory;
+	notif_group_id: number;
+	notif_group: NotificationGroup;
 	receiver_profile_id: number;
 	receiver_profile: Profile;
 	code: string;
-	description?: string;
-	default_enabled?: boolean;
+	name: string;
+	title: string;
+	message: string;
 	notifications?: Notification[];
 }
 
