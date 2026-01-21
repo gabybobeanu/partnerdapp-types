@@ -198,6 +198,7 @@ export enum ActivityTypeCode {
     MEETING_UPDATED = 'MEETING_UPDATED',
     MEETING_REFUSED = 'MEETING_REFUSED',
     MEETING_DELETED = 'MEETING_DELETED',
+    MESSAGE_SENT = 'MESSAGE_SENT',
 }
 
 export enum NotificationCategoryCode {

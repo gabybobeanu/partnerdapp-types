@@ -180,6 +180,12 @@ export const ACTIVITY_TYPE__MEETING_DELETED: ActivityType = {
     name: 'Meeting Deleted',
 };
 
+export const ACTIVITY_TYPE__MESSAGE_SENT: ActivityType = {
+    id: 800001,
+    code: ActivityTypeCode.MESSAGE_SENT,
+    name: 'Message Sent',
+};
+
 export const ACTIVITY_TYPES: ActivityType[] = [
     ACTIVITY_TYPE__JOB_CREATED,
     ACTIVITY_TYPE__JOB_UPDATED,
@@ -215,4 +221,5 @@ export const ACTIVITY_TYPES: ActivityType[] = [
     ACTIVITY_TYPE__MEETING_UPDATED,
     ACTIVITY_TYPE__MEETING_REFUSED,
     ACTIVITY_TYPE__MEETING_DELETED,
+    ACTIVITY_TYPE__MESSAGE_SENT,
 ];
