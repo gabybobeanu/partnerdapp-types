@@ -90,6 +90,11 @@ export const ACTIVITY_TYPE__MEMBER_REMOVED: ActivityType = {
     code: ActivityTypeCode.MEMBER_REMOVED,
     name: 'Member Removed',
 };
+export const ACTIVITY_TYPE__MEMBER_UPDATED: ActivityType = {
+    id: 400004,
+    code: ActivityTypeCode.MEMBER_UPDATED,
+    name: 'Member Updated',
+};
 
 export const ACTIVITY_TYPE__REVIEW_POSTED: ActivityType = {
     id: 500001,
@@ -192,6 +197,7 @@ export const ACTIVITY_TYPES: ActivityType[] = [
     ACTIVITY_TYPE__CANDIDATE_TERMINATED,
     ACTIVITY_TYPE__MEMBER_INVITED,
     ACTIVITY_TYPE__MEMBER_JOINED,
+    ACTIVITY_TYPE__MEMBER_UPDATED,
     ACTIVITY_TYPE__MEMBER_REMOVED,
     ACTIVITY_TYPE__REVIEW_POSTED,
     ACTIVITY_TYPE__STAGE_CREATED,
