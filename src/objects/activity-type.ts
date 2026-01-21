@@ -74,6 +74,21 @@ export const ACTIVITY_TYPE__CANDIDATE_TERMINATED: ActivityType = {
     code: ActivityTypeCode.CANDIDATE_TERMINATED,
     name: 'Candidate Terminated',
 };
+export const ACTIVITY_TYPE__CANDIDATE_INVITED: ActivityType = {
+    id: 300006,
+    code: ActivityTypeCode.CANDIDATE_INVITED,
+    name: 'Candidate Invited',
+};
+export const ACTIVITY_TYPE__CANDIDATE_CONNECTED: ActivityType = {
+    id: 300007,
+    code: ActivityTypeCode.CANDIDATE_CONNECTED,
+    name: 'Candidate Connected',
+};
+export const ACTIVITY_TYPE__CANDIDATE_APPLIED: ActivityType = {
+    id: 300008,
+    code: ActivityTypeCode.CANDIDATE_APPLIED,
+    name: 'Candidate Applied',
+};
 
 export const ACTIVITY_TYPE__MEMBER_INVITED: ActivityType = {
     id: 400001,
@@ -201,6 +216,9 @@ export const ACTIVITY_TYPES: ActivityType[] = [
     ACTIVITY_TYPE__CANDIDATE_HIRED,
     ACTIVITY_TYPE__CANDIDATE_REJECTED,
     ACTIVITY_TYPE__CANDIDATE_TERMINATED,
+    ACTIVITY_TYPE__CANDIDATE_INVITED,
+    ACTIVITY_TYPE__CANDIDATE_CONNECTED,
+    ACTIVITY_TYPE__CANDIDATE_APPLIED,
     ACTIVITY_TYPE__MEMBER_INVITED,
     ACTIVITY_TYPE__MEMBER_JOINED,
     ACTIVITY_TYPE__MEMBER_UPDATED,
