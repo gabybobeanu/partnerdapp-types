@@ -441,7 +441,7 @@ export interface Candidate {
 	resumes: any[]; //TODO: define resume type
 	invites: CandidateInvite[];
 	applications: CandidateJobApplication[];
-	ideal_jobs: IdealJob[];
+	ideal_job: IdealJob;
 	pool: CandidatePool[];
 	candidate_skills: CandidateSkill[];
 	candidate_tags: CandidateTag[];
