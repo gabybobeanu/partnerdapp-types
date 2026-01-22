@@ -733,6 +733,7 @@ export interface NotificationCategory {
 	id: number;
 	name: string;
 	code: string;
+	notification_groups?: NotificationGroup[];
 	notification_types?: NotificationType[];
 }
 
@@ -740,9 +741,14 @@ export interface NotificationGroup {
 	id: number;
 	name: string;
 	code: string;
+	notif_categ_id: number;
+	notif_categ: NotificationCategory;
+	receiver_profile_id: number;
+	receiver_profile: Profile;
 	description?: string;
 	default_enabled?: boolean;
 	notification_types?: NotificationType[];
+	notif_preferences?: NotificationPreference[];
 }
 
 export interface NotificationType {
@@ -774,4 +780,13 @@ export interface Notification {
 	updated_at?: Date;
 	activity_id?: number;
 	activity?: ActivityLog;
+}
+
+export interface NotificationPreference {
+	id: number;
+	notif_group_id: number;
+	notif_group: NotificationGroup;
+	notif_receiver_id: number;
+	notif_receiver: User;
+	is_enabled: boolean;
 }
