@@ -11,8 +11,8 @@ export const ErrorMessages: Record<ErrorCode, string> = {
     PROFILE_ID_INVALID: 'The provided profile ID {0} is invalid',
     ROLE_ID_REQUIRED: 'Role ID is required to perform this action',
     CLERK_ID_REQUIRED: 'Clerk ID is required to perform this action',
-    USER_EMAIL_EXISTS: 'The email {0} is already associated with another user account',
-    USER_PHONE_EXISTS: 'The phone number {0} is already associated with another user account',
+    USER_EMAIL_EXISTS: 'The email "{0}" is already associated with another user account',
+    USER_PHONE_EXISTS: 'The phone number "{0}" is already associated with another user account',
 
     //employer errors
     EMPLOYER_NOT_FOUND: 'Employer was not found',
@@ -47,6 +47,7 @@ export const ErrorMessages: Record<ErrorCode, string> = {
     ADMIN_EMPLOYER_NOT_FOUND: 'Administrator employer was not found for the company',
     ADMIN_EMPLOYER_ID_NOT_FOUND: 'Administrator employer with ID {0} was not found',
     ADMIN_OR_COMPANY_NOT_FOUND: 'Administrator or company was not found',
+    ADMIN_DELETE_NOT_ALLOWED: 'Cannot delete an Administrator employer',
 
     //company errors
     COMPANY_NOT_FOUND: 'Company was not found',
@@ -56,7 +57,7 @@ export const ErrorMessages: Record<ErrorCode, string> = {
     COMPANY_ID_NOT_UPDATED: 'Failed to update company with ID {0} due to internal error',
     COMPANY_NOT_VALIDATED: 'Failed to validate company due to internal error',
     COMPANY_ID_NOT_VALIDATED: 'Failed to validate company with ID {0} due to internal error',
-    COMPANY_NAME_EXISTS: 'Company name already exists',
+    COMPANY_NAME_EXISTS: 'A company with the name "{0}" already exists',
 
     //invite errors
     INVITE_NOT_CREATED: 'Failed to create invite due to internal error',
@@ -108,7 +109,7 @@ export const ErrorMessages: Record<ErrorCode, string> = {
     CANDIDATE_JOB_APPLICATION_ID_NOT_REJECTED: 'Failed to reject candidate job application with ID {0} due to internal error',
 
     //job hire errors
-    JOB_HIRES_LIMIT_REACHED: 'The job {0} has reached its maximum number of hires',
+    JOB_HIRES_LIMIT_REACHED: 'The job "{0}" has reached its maximum number of hires',
     CANDIDATE_ALREADY_HIRED_FOR_ANOTHER_JOB: 'This candidate has already been hired for another job',
     JOB_HIRE_NOT_CREATED: 'Failed to create job hire due to internal error',
     HIRE_NOT_FOUND_OR_ALREADY_TERMINATED: 'Hire was not found or already terminated',
