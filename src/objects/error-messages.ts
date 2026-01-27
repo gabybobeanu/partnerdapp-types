@@ -5,6 +5,8 @@ export const ErrorMessages: Record<ErrorCode, string> = {
     USER_NOT_FOUND: 'User was not found',
     USER_ID_NOT_FOUND: 'User with ID {0} was not found',
     USER_NOT_CREATED: 'Failed to create user due to internal error',
+    USER_NOT_UPDATED: 'Failed to update user due to internal error',
+    USER_ID_NOT_UPDATED: 'Failed to update user with ID {0} due to internal error',
 
     PROFILE_ID_INVALID: 'The provided profile ID {0} is invalid',
     ROLE_ID_REQUIRED: 'Role ID is required to perform this action',
@@ -52,6 +54,8 @@ export const ErrorMessages: Record<ErrorCode, string> = {
     COMPANY_ID_REQUIRED: 'Company ID is required to perform this action',
     COMPANY_NOT_UPDATED: 'Failed to update company due to internal error',
     COMPANY_ID_NOT_UPDATED: 'Failed to update company with ID {0} due to internal error',
+    COMPANY_NOT_VALIDATED: 'Failed to validate company due to internal error',
+    COMPANY_ID_NOT_VALIDATED: 'Failed to validate company with ID {0} due to internal error',
     COMPANY_NAME_EXISTS: 'Company name already exists',
 
     //invite errors
