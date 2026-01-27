@@ -47,8 +47,11 @@ export const ErrorMessages: Record<ErrorCode, string> = {
     ADMIN_OR_COMPANY_NOT_FOUND: 'Administrator or company was not found',
 
     //company errors
+    COMPANY_NOT_FOUND: 'Company was not found',
+    COMPANY_ID_NOT_FOUND: 'Company with ID {0} was not found',
     COMPANY_ID_REQUIRED: 'Company ID is required to perform this action',
     COMPANY_NOT_UPDATED: 'Failed to update company due to internal error',
+    COMPANY_ID_NOT_UPDATED: 'Failed to update company with ID {0} due to internal error',
     COMPANY_NAME_EXISTS: 'Company name already exists',
 
     //invite errors
