@@ -19,6 +19,8 @@ export * from "./objects/activity-type.js";
 export * from "./objects/notification-category.js";
 export * from "./objects/notification-group.js";
 export * from "./objects/notification-type.js";
+export * from "./objects/error-codes.js";
+export * from "./objects/error-messages.js";
 
 export interface Profile {
 	id: number;
