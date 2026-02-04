@@ -444,6 +444,28 @@ export interface RoleRight {
 	right: Right;
 }
 
+export interface Resume {
+	id: number;
+	candidate_id: number;
+	candidate: Candidate;
+
+	filename: string;
+	original_name: string;
+	file_url?: string;
+	content?: Uint8Array;
+	file_size: number;
+	file_type: string;
+	
+	is_primary: boolean;
+	is_active: boolean;
+
+	parsed_text?: string;
+	parsing_status?: string;
+	
+	created_at: Date;
+  	updated_at: Date;
+}
+
 export interface Candidate {
 	id: number;
 	description?: string;
