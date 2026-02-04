@@ -22,6 +22,18 @@ export * from "./objects/notification-type.js";
 export * from "./objects/error-codes.js";
 export * from "./objects/error-messages.js";
 
+export interface ApiResponse {
+	success: boolean;
+	successCode?: string;
+	successMessage?: string;
+	data?: any;
+	errorCode?: string;
+	errorMessage?: string;
+	message?: string;
+	timestamp?: string;
+	path?: string;
+}
+
 export interface Profile {
 	id: number;
 	code: ProfileCode;
