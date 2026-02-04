@@ -170,6 +170,7 @@ export const ErrorMessages: Record<ErrorCode, string> = {
     RESUME_NOT_DELETED: 'Failed to delete resume due to internal error',
     RESUME_ID_NOT_DELETED: 'Failed to delete resume with ID {0} due to internal error',
     RESUME_MAX_LIMIT_EXCEEDED: 'You have exceeded the maximum limit of {0} resumes',
+    RESUME_FILE_NOT_FOUND: 'Resume file not found on the server',
 };
 
 // Utility function to format messages with parameters

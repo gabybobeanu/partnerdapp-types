@@ -169,6 +169,7 @@ export const ErrorCodes = {
     RESUME_NOT_DELETED: 'RESUME_NOT_DELETED',
     RESUME_ID_NOT_DELETED: 'RESUME_ID_NOT_DELETED',
     RESUME_MAX_LIMIT_EXCEEDED: 'RESUME_MAX_LIMIT_EXCEEDED',
+    RESUME_FILE_NOT_FOUND: 'RESUME_FILE_NOT_FOUND',
 };
 
 export type ErrorCode = typeof ErrorCodes[keyof typeof ErrorCodes];
