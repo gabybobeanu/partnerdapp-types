@@ -487,6 +487,35 @@ export const RIGHT__ADMIN__COMPANY__ACTIVATE: Right = {
     name: "Activate Company",
 };
 
+export const RIGHT__RESUME__LIST__VIEW: Right = {
+    id: 6000000,
+    code: RightCode.RESUME__LIST__VIEW,
+    name: "View Resumes List",
+};
+export const RIGHT__RESUME__ITEM__VIEW: Right = {
+    id: 6001000,
+    code: RightCode.RESUME__ITEM__VIEW,
+    name: "View Resume",
+};
+
+export const RIGHT__RESUME__ITEM__CREATE: Right = {
+    id: 6001001,
+    code: RightCode.RESUME__ITEM__CREATE,
+    name: "Create Resume",
+};
+
+export const RIGHT__RESUME__ITEM__EDIT: Right = {
+    id: 6001002,
+    code: RightCode.RESUME__ITEM__EDIT,
+    name: "Edit Resume",
+};
+
+export const RIGHT__RESUME__ITEM__DELETE: Right = {
+    id: 6001003,
+    code: RightCode.RESUME__ITEM__DELETE,
+    name: "Delete Resume",
+};
+
 export const RIGHTS: Right[] = [
     RIGHT__JOB__LIST__VIEW,
     RIGHT__JOB__ITEM__VIEW,
@@ -567,4 +596,9 @@ export const RIGHTS: Right[] = [
     RIGHT__ADMIN__USER_LIST__VIEW,
     RIGHT__ADMIN__USER__ACTIVATE,
     RIGHT__ADMIN__COMPANY__ACTIVATE,
+    RIGHT__RESUME__LIST__VIEW,
+    RIGHT__RESUME__ITEM__VIEW,
+    RIGHT__RESUME__ITEM__CREATE,
+    RIGHT__RESUME__ITEM__EDIT,
+    RIGHT__RESUME__ITEM__DELETE,
 ];
