@@ -158,6 +158,17 @@ export const ErrorMessages: Record<ErrorCode, string> = {
     TODO_ID_NOT_UPDATED: 'Failed to update to-do item with ID {0} due to internal error',
     TODO_NOT_DELETED: 'Failed to delete to-do item due to internal error',
     TODO_ID_NOT_DELETED: 'Failed to delete to-do item with ID {0} due to internal error',
+
+    //resume errors
+    RESUME_NOT_FOUND: 'Resume was not found',
+    RESUME_ID_NOT_FOUND: 'Resume with ID {0} was not found',
+    RESUME_INVALID_FILE_TYPE: 'Invalid file type for resume. Only PDF, DOC, and DOCX files are allowed.',
+    RESUME_FILE_SIZE_EXCEEDED: 'Resume file size exceeds the maximum allowed limit of {0} MB',
+    RESUME_NOT_UPLOADED: 'Failed to upload resume due to internal error',
+    RESUME_NOT_UPDATED: 'Failed to update resume due to internal error',
+    RESUME_ID_NOT_UPDATED: 'Failed to update resume with ID {0} due to internal error',
+    RESUME_NOT_DELETED: 'Failed to delete resume due to internal error',
+    RESUME_ID_NOT_DELETED: 'Failed to delete resume with ID {0} due to internal error',
 };
 
 // Utility function to format messages with parameters
