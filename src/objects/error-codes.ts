@@ -168,6 +168,7 @@ export const ErrorCodes = {
     RESUME_ID_NOT_UPDATED: 'RESUME_ID_NOT_UPDATED',
     RESUME_NOT_DELETED: 'RESUME_NOT_DELETED',
     RESUME_ID_NOT_DELETED: 'RESUME_ID_NOT_DELETED',
+    RESUME_MAX_LIMIT_EXCEEDED: 'RESUME_MAX_LIMIT_EXCEEDED',
 };
 
 export type ErrorCode = typeof ErrorCodes[keyof typeof ErrorCodes];
