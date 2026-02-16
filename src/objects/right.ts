@@ -334,13 +334,19 @@ export const RIGHT__USER__LIST__VIEW: Right = {
 export const RIGHT__USER__ITEM__VIEW: Right = {
     id: 5001000,
     code: RightCode.USER__ITEM__VIEW,
-    name: "View Users",
+    name: "View User",
 };
 
 export const RIGHT__USER__ITEM__CREATE: Right = {
     id: 5001001,
     code: RightCode.USER__ITEM__CREATE,
     name: "Create User",
+};
+
+export const RIGHT__USER__ITEM__EDIT: Right = {
+    id: 5001002,
+    code: RightCode.USER__ITEM__EDIT,
+    name: "Edit User",
 };
 
 export const RIGHT__USER__ITEM__DELETE: Right = {
@@ -573,6 +579,7 @@ export const RIGHTS: Right[] = [
     RIGHT__USER__LIST__VIEW,
     RIGHT__USER__ITEM__VIEW,
     RIGHT__USER__ITEM__CREATE,
+    RIGHT__USER__ITEM__EDIT,
     RIGHT__USER__ITEM__DELETE,
     RIGHT__USER__PROFILE__VIEW,
     RIGHT__USER__PROFILE__EDIT,
