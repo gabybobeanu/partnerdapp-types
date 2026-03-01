@@ -67,6 +67,9 @@ export const ErrorMessages: Record<ErrorCode, string> = {
     INVITE_EXPIRED: 'Invite has expired',
     INVITE_ALREADY_USED: 'Invite has already been used',
     INVITE_NOT_UPDATED: 'Failed to update invite due to internal error',
+    INVITE_ID_NOT_UPDATED: 'Failed to update invite with ID {0} due to internal error',
+    INVITE_NOT_DELETED: 'Failed to delete invite due to internal error',
+    INVITE_ID_NOT_DELETED: 'Failed to delete invite with ID {0} due to internal error',
     CANDIDATE_INVITE_ALREADY_EXISTS: 'An invite for this candidate already exists',
     CANDIDATE_INVITE_ALREADY_EXISTS_FOR_JOB: 'An invite for this candidate and job already exists',
 
