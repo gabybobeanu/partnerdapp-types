@@ -195,6 +195,17 @@ export const NOTIF_GROUP__CANDIDATE_MESSAGES: NotificationGroup = {
     description: 'Notifications about new messages received',
     default_enabled: true
 };
+export const NOTIF_GROUP__CANDIDATE_ACCOUNT: NotificationGroup = {
+    id: 310900,
+    receiver_profile_id: PROFILE_CANDIDATE.id,
+    receiver_profile: PROFILE_CANDIDATE,
+    notif_categ_id: NOTIF_CATEG__GENERAL.id,
+    notif_categ: NOTIF_CATEG__GENERAL,
+    code: NotificationGroupCode.CANDIDATE_ACCOUNT,
+    name: 'Candidate Account Activities',
+    description: 'Notifications about candidate account activities',
+    default_enabled: true
+};
 
 export const NOTIF_GROUP__CANDIDATE_STAGE_UPDATES: NotificationGroup = {
     id: 320200,
@@ -252,6 +263,7 @@ export const NOTIF_GROUPS: NotificationGroup[] = [
 
     NOTIF_GROUP__CANDIDATE_REVIEWS,
     NOTIF_GROUP__CANDIDATE_MESSAGES,
+    NOTIF_GROUP__CANDIDATE_ACCOUNT,
     NOTIF_GROUP__CANDIDATE_STAGE_UPDATES,
     NOTIF_GROUP__CANDIDATE_STATUS_UPDATES,
     NOTIF_GROUP__CANDIDATE_INTERVIEWS
