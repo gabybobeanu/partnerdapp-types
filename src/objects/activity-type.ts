@@ -201,6 +201,37 @@ export const ACTIVITY_TYPE__MESSAGE_SENT: ActivityType = {
     name: 'Message Sent',
 };
 
+export const ACTIVITY_TYPE__ACCOUNT_CREATED: ActivityType = {
+    id: 900001,
+    code: ActivityTypeCode.ACCOUNT_CREATED,
+    name: 'Account Created',
+};
+export const ACTIVITY_TYPE__ACCOUNT_ACTIVATED: ActivityType = {
+    id: 900002,
+    code: ActivityTypeCode.ACCOUNT_ACTIVATED,
+    name: 'Account Activated',
+};
+export const ACTIVITY_TYPE__ACCOUNT_DEACTIVATED: ActivityType = {
+    id: 900003,
+    code: ActivityTypeCode.ACCOUNT_DEACTIVATED,
+    name: 'Account Deactivated',
+};
+export const ACTIVITY_TYPE__COMPANY_ACTIVATED: ActivityType = {
+    id: 900004,
+    code: ActivityTypeCode.COMPANY_ACTIVATED,
+    name: 'Company Activated',
+};
+export const ACTIVITY_TYPE__COMPANY_DEACTIVATED: ActivityType = {
+    id: 900005,
+    code: ActivityTypeCode.COMPANY_DEACTIVATED,
+    name: 'Company Deactivated',
+};
+export const ACTIVITY_TYPE__ACCOUNT_DELETED: ActivityType = {
+    id: 900006,
+    code: ActivityTypeCode.ACCOUNT_DELETED,
+    name: 'Account Deleted',
+};
+
 export const ACTIVITY_TYPES: ActivityType[] = [
     ACTIVITY_TYPE__JOB_CREATED,
     ACTIVITY_TYPE__JOB_UPDATED,

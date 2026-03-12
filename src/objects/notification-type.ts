@@ -800,6 +800,32 @@ export const NOTIF_TYPE__CANDIDATE_INVITED: NotificationType = {
     title: 'You have been invited',
     message: 'You have been invited to create a candidate account',
 };
+export const NOTIF_TYPE__CANDIDATE_ACCOUNT_CREATED: NotificationType = {
+    id: 310902,
+    notif_categ_id: NOTIF_CATEG__GENERAL.id,
+    notif_categ: NOTIF_CATEG__GENERAL,
+    notif_group_id: NOTIF_GROUP__CANDIDATE_ACCOUNT.id,
+    notif_group: NOTIF_GROUP__CANDIDATE_ACCOUNT,
+    receiver_profile_id: PROFILE_CANDIDATE.id,
+    receiver_profile: PROFILE_CANDIDATE,
+    code: NotificationTypeCode.CANDIDATE_ACCOUNT_CREATED,
+    name: 'Candidate Account Created',
+    title: 'Your candidate account has been created',
+    message: 'Your candidate account has been successfully created',
+};
+export const NOTIF_TYPE__CANDIDATE_ACCOUNT_DELETED: NotificationType = {
+    id: 310906,
+    notif_categ_id: NOTIF_CATEG__GENERAL.id,
+    notif_categ: NOTIF_CATEG__GENERAL,
+    notif_group_id: NOTIF_GROUP__CANDIDATE_ACCOUNT.id,
+    notif_group: NOTIF_GROUP__CANDIDATE_ACCOUNT,
+    receiver_profile_id: PROFILE_CANDIDATE.id,
+    receiver_profile: PROFILE_CANDIDATE,
+    code: NotificationTypeCode.CANDIDATE_ACCOUNT_DELETED,
+    name: 'Candidate Account Deleted',
+    title: 'Your candidate account has been deleted',
+    message: 'Your candidate account has been successfully deleted',
+};
 
 export const NOTIF_TYPE__CANDIDATE_STAGE_CREATED: NotificationType = {
     id: 320201,
@@ -1060,6 +1086,8 @@ export const NOTIF_TYPES: NotificationType[] = [
     NOTIF_TYPE__CANDIDATE_MESSAGE_FROM_EMPLOYER,
     NOTIF_TYPE__CANDIDATE_MESSAGE_FROM_RECRUITER,
     NOTIF_TYPE__CANDIDATE_INVITED,
+    NOTIF_TYPE__CANDIDATE_ACCOUNT_CREATED,
+    NOTIF_TYPE__CANDIDATE_ACCOUNT_DELETED,
     NOTIF_TYPE__CANDIDATE_STAGE_CREATED,
     NOTIF_TYPE__CANDIDATE_STAGE_UPDATED,
     NOTIF_TYPE__CANDIDATE_STAGE_DELETED,
