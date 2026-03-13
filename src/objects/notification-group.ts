@@ -51,6 +51,16 @@ export const NOTIF_GROUP__EMPLOYER_MESSAGES: NotificationGroup = {
     name: 'New Messages Received',
     description: 'Notifications about new messages'
 };
+export const NOTIF_GROUP__EMPLOYER_ACCOUNT: NotificationGroup = {
+    id: 110900,
+    notif_categ_id: NOTIF_CATEG__GENERAL.id,
+    notif_categ: NOTIF_CATEG__GENERAL,
+    receiver_profile_id: PROFILE_EMPLOYER.id,
+    receiver_profile: PROFILE_EMPLOYER,
+    code: NotificationGroupCode.EMPLOYER_ACCOUNT,
+    name: 'Employer Account Activities',
+    description: 'Notifications about employer account activities'
+};
 export const NOTIF_GROUP__EMPLOYER_CANDIDATE_UPDATES: NotificationGroup = {
     id: 120300,
     notif_categ_id: NOTIF_CATEG__HIRING_PROCESS.id,
@@ -141,6 +151,16 @@ export const NOTIF_GROUP__RECRUITER_MESSAGES: NotificationGroup = {
     code: NotificationGroupCode.RECRUITER_MESSAGES,
     name: 'New Messages Received',
     description: 'Notifications about new messages received'
+};
+export const NOTIF_GROUP__RECRUITER_ACCOUNT: NotificationGroup = {
+    id: 210900,
+    notif_categ_id: NOTIF_CATEG__GENERAL.id,
+    notif_categ: NOTIF_CATEG__GENERAL,
+    receiver_profile_id: PROFILE_RECRUITER.id,
+    receiver_profile: PROFILE_RECRUITER,
+    code: NotificationGroupCode.RECRUITER_ACCOUNT,
+    name: 'Recruiter Account Activities',
+    description: 'Notifications about recruiter account activities'
 };
 export const NOTIF_GROUP__RECRUITER_CANDIDATE_UPDATES: NotificationGroup = {
     id: 220300,

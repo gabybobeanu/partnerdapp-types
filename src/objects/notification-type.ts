@@ -1,6 +1,6 @@
 import { NotificationTypeCode } from "../constants.js";
 import { NOTIF_CATEG__GENERAL, NOTIF_CATEG__HIRING_PROCESS, PROFILE_CANDIDATE, PROFILE_EMPLOYER, PROFILE_RECRUITER, type NotificationType } from "../index.js";
-import { NOTIF_GROUP__CANDIDATE_ACCOUNT, NOTIF_GROUP__CANDIDATE_INTERVIEWS, NOTIF_GROUP__CANDIDATE_MESSAGES, NOTIF_GROUP__CANDIDATE_REVIEWS, NOTIF_GROUP__CANDIDATE_STAGE_UPDATES, NOTIF_GROUP__CANDIDATE_STATUS_UPDATES, NOTIF_GROUP__EMPLOYER_CANDIDATE_UPDATES, NOTIF_GROUP__EMPLOYER_INTERVIEWS, NOTIF_GROUP__EMPLOYER_MEETINGS, NOTIF_GROUP__EMPLOYER_MESSAGES, NOTIF_GROUP__EMPLOYER_RECRUITER_REQUESTS, NOTIF_GROUP__EMPLOYER_REVIEWS, NOTIF_GROUP__EMPLOYER_STAGE_UPDATES, NOTIF_GROUP__EMPLOYER_TEAM_UPDATES, NOTIF_GROUP__RECRUITER_CANDIDATE_CONNECTIONS, NOTIF_GROUP__RECRUITER_CANDIDATE_UPDATES, NOTIF_GROUP__RECRUITER_INTERVIEWS, NOTIF_GROUP__RECRUITER_JOB_UPDATES, NOTIF_GROUP__RECRUITER_MEETINGS, NOTIF_GROUP__RECRUITER_MESSAGES, NOTIF_GROUP__RECRUITER_REQUESTS_UPDATES, NOTIF_GROUP__RECRUITER_REVIEWS, NOTIF_GROUP__RECRUITER_STAGE_UPDATES } from "./notification-group.js";
+import { NOTIF_GROUP__CANDIDATE_ACCOUNT, NOTIF_GROUP__CANDIDATE_INTERVIEWS, NOTIF_GROUP__CANDIDATE_MESSAGES, NOTIF_GROUP__CANDIDATE_REVIEWS, NOTIF_GROUP__CANDIDATE_STAGE_UPDATES, NOTIF_GROUP__CANDIDATE_STATUS_UPDATES, NOTIF_GROUP__EMPLOYER_ACCOUNT, NOTIF_GROUP__EMPLOYER_CANDIDATE_UPDATES, NOTIF_GROUP__EMPLOYER_INTERVIEWS, NOTIF_GROUP__EMPLOYER_MEETINGS, NOTIF_GROUP__EMPLOYER_MESSAGES, NOTIF_GROUP__EMPLOYER_RECRUITER_REQUESTS, NOTIF_GROUP__EMPLOYER_REVIEWS, NOTIF_GROUP__EMPLOYER_STAGE_UPDATES, NOTIF_GROUP__EMPLOYER_TEAM_UPDATES, NOTIF_GROUP__RECRUITER_ACCOUNT, NOTIF_GROUP__RECRUITER_CANDIDATE_CONNECTIONS, NOTIF_GROUP__RECRUITER_CANDIDATE_UPDATES, NOTIF_GROUP__RECRUITER_INTERVIEWS, NOTIF_GROUP__RECRUITER_JOB_UPDATES, NOTIF_GROUP__RECRUITER_MEETINGS, NOTIF_GROUP__RECRUITER_MESSAGES, NOTIF_GROUP__RECRUITER_REQUESTS_UPDATES, NOTIF_GROUP__RECRUITER_REVIEWS, NOTIF_GROUP__RECRUITER_STAGE_UPDATES } from "./notification-group.js";
 
 export const NOTIF_TYPE__EMPLOYER_RECRUITER_APPLIED: NotificationType = {
     id: 110201,
@@ -199,6 +199,85 @@ export const NOTIF_TYPE__EMPLOYER_MESSAGE_FROM_CANDIDATE: NotificationType = {
     name: 'New Message from Candidate',
     title: 'You have a new message',
     message: 'You have received a new message from a candidate',
+};
+
+export const NOTIF_TYPE__EMPLOYER_ACCOUNT_CREATED: NotificationType = {
+    id: 110901,
+    notif_categ_id: 10,
+    notif_categ: NOTIF_CATEG__GENERAL,
+    notif_group_id: 110900,
+    notif_group: NOTIF_GROUP__EMPLOYER_ACCOUNT,
+    receiver_profile_id: PROFILE_EMPLOYER.id,
+    receiver_profile: PROFILE_EMPLOYER,
+    code: NotificationTypeCode.EMPLOYER_ACCOUNT_CREATED,
+    name: 'Employer Account Created',
+    title: 'Your account has been created',
+    message: 'Your account has been successfully created',
+};
+export const NOTIF_TYPE__EMPLOYER_ACCOUNT_ACTIVATED: NotificationType = {
+    id: 110902,
+    notif_categ_id: 10,
+    notif_categ: NOTIF_CATEG__GENERAL,
+    notif_group_id: 110900,
+    notif_group: NOTIF_GROUP__EMPLOYER_ACCOUNT,
+    receiver_profile_id: PROFILE_EMPLOYER.id,
+    receiver_profile: PROFILE_EMPLOYER,
+    code: NotificationTypeCode.EMPLOYER_ACCOUNT_ACTIVATED,
+    name: 'Employer Account Activated',
+    title: 'Your account has been activated',
+    message: 'Your account has been successfully activated',
+};
+export const NOTIF_TYPE__EMPLOYER_ACCOUNT_DEACTIVATED: NotificationType = {
+    id: 110903,
+    notif_categ_id: 10,
+    notif_categ: NOTIF_CATEG__GENERAL,
+    notif_group_id: 110900,
+    notif_group: NOTIF_GROUP__EMPLOYER_ACCOUNT,
+    receiver_profile_id: PROFILE_EMPLOYER.id,
+    receiver_profile: PROFILE_EMPLOYER,
+    code: NotificationTypeCode.EMPLOYER_ACCOUNT_DEACTIVATED,
+    name: 'Employer Account Deactivated',
+    title: 'Your account has been deactivated',
+    message: 'Your account has been successfully deactivated',
+};
+export const NOTIF_TYPE__EMPLOYER_COMPANY_ACTIVATED: NotificationType = {
+    id: 110904,
+    notif_categ_id: 10,
+    notif_categ: NOTIF_CATEG__GENERAL,
+    notif_group_id: 110900,
+    notif_group: NOTIF_GROUP__EMPLOYER_ACCOUNT,
+    receiver_profile_id: PROFILE_EMPLOYER.id,
+    receiver_profile: PROFILE_EMPLOYER,
+    code: NotificationTypeCode.EMPLOYER_COMPANY_ACTIVATED,
+    name: 'Employer Company Activated',
+    title: 'Your company has been activated',
+    message: 'Your company has been successfully activated',
+};
+export const NOTIF_TYPE__EMPLOYER_COMPANY_DEACTIVATED: NotificationType = {
+    id: 110905,
+    notif_categ_id: 10,
+    notif_categ: NOTIF_CATEG__GENERAL,
+    notif_group_id: 110900,
+    notif_group: NOTIF_GROUP__EMPLOYER_ACCOUNT,
+    receiver_profile_id: PROFILE_EMPLOYER.id,
+    receiver_profile: PROFILE_EMPLOYER,
+    code: NotificationTypeCode.EMPLOYER_COMPANY_DEACTIVATED,
+    name: 'Employer Company Deactivated',
+    title: 'Your company has been deactivated',
+    message: 'Your company has been successfully deactivated',
+};
+export const NOTIF_TYPE__EMPLOYER_ACCOUNT_DELETED: NotificationType = {
+    id: 110906,
+    notif_categ_id: 10,
+    notif_categ: NOTIF_CATEG__GENERAL,
+    notif_group_id: 110900,
+    notif_group: NOTIF_GROUP__EMPLOYER_ACCOUNT,
+    receiver_profile_id: PROFILE_EMPLOYER.id,
+    receiver_profile: PROFILE_EMPLOYER,
+    code: NotificationTypeCode.EMPLOYER_ACCOUNT_DELETED,
+    name: 'Employer Account Deleted',
+    title: 'Your account has been deleted',
+    message: 'Your account has been successfully deleted',
 };
 
 // Hiring Process Notifications
@@ -573,6 +652,85 @@ export const NOTIF_TYPE__RECRUITER_MESSAGE_FROM_CANDIDATE: NotificationType = {
     name: 'New Message from Candidate',
     title: 'You have a new message',
     message: 'You have received a new message from a candidate',
+};
+
+export const NOTIF_TYPE__RECRUITER_ACCOUNT_CREATED: NotificationType = {
+    id: 210901,
+    notif_categ_id: 10,
+    notif_categ: NOTIF_CATEG__GENERAL,
+    notif_group_id: 210900,
+    notif_group: NOTIF_GROUP__RECRUITER_ACCOUNT,
+    receiver_profile_id: PROFILE_RECRUITER.id,
+    receiver_profile: PROFILE_RECRUITER,
+    code: NotificationTypeCode.RECRUITER_ACCOUNT_CREATED,
+    name: 'Recruiter Account Created',
+    title: 'Your account has been created',
+    message: 'Your account has been successfully created',
+};
+export const NOTIF_TYPE__RECRUITER_ACCOUNT_ACTIVATED: NotificationType = {
+    id: 210902,
+    notif_categ_id: 10,
+    notif_categ: NOTIF_CATEG__GENERAL,
+    notif_group_id: 210900,
+    notif_group: NOTIF_GROUP__RECRUITER_ACCOUNT,
+    receiver_profile_id: PROFILE_RECRUITER.id,
+    receiver_profile: PROFILE_RECRUITER,
+    code: NotificationTypeCode.RECRUITER_ACCOUNT_ACTIVATED,
+    name: 'Recruiter Account Activated',
+    title: 'Your account has been activated',
+    message: 'Your account has been successfully activated',
+};
+export const NOTIF_TYPE__RECRUITER_ACCOUNT_DEACTIVATED: NotificationType = {
+    id: 210903,
+    notif_categ_id: 10,
+    notif_categ: NOTIF_CATEG__GENERAL,
+    notif_group_id: 210900,
+    notif_group: NOTIF_GROUP__RECRUITER_ACCOUNT,
+    receiver_profile_id: PROFILE_RECRUITER.id,
+    receiver_profile: PROFILE_RECRUITER,
+    code: NotificationTypeCode.RECRUITER_ACCOUNT_DEACTIVATED,
+    name: 'Recruiter Account Deactivated',
+    title: 'Your account has been deactivated',
+    message: 'Your account has been successfully deactivated',
+};
+export const NOTIF_TYPE__RECRUITER_COMPANY_ACTIVATED: NotificationType = {
+    id: 210904,
+    notif_categ_id: 10,
+    notif_categ: NOTIF_CATEG__GENERAL,
+    notif_group_id: 210900,
+    notif_group: NOTIF_GROUP__RECRUITER_ACCOUNT,
+    receiver_profile_id: PROFILE_RECRUITER.id,
+    receiver_profile: PROFILE_RECRUITER,
+    code: NotificationTypeCode.RECRUITER_COMPANY_ACTIVATED,
+    name: 'Recruiter Company Activated',
+    title: 'Your company has been activated',
+    message: 'Your company has been successfully activated',
+};
+export const NOTIF_TYPE__RECRUITER_COMPANY_DEACTIVATED: NotificationType = {
+    id: 210905,
+    notif_categ_id: 10,
+    notif_categ: NOTIF_CATEG__GENERAL,
+    notif_group_id: 210900,
+    notif_group: NOTIF_GROUP__RECRUITER_ACCOUNT,
+    receiver_profile_id: PROFILE_RECRUITER.id,
+    receiver_profile: PROFILE_RECRUITER,
+    code: NotificationTypeCode.RECRUITER_COMPANY_DEACTIVATED,
+    name: 'Recruiter Company Deactivated',
+    title: 'Your company has been deactivated',
+    message: 'Your company has been successfully deactivated',
+};
+export const NOTIF_TYPE__RECRUITER_ACCOUNT_DELETED: NotificationType = {
+    id: 210906,
+    notif_categ_id: 10,
+    notif_categ: NOTIF_CATEG__GENERAL,
+    notif_group_id: 210900,
+    notif_group: NOTIF_GROUP__RECRUITER_ACCOUNT,
+    receiver_profile_id: PROFILE_RECRUITER.id,
+    receiver_profile: PROFILE_RECRUITER,
+    code: NotificationTypeCode.RECRUITER_ACCOUNT_DELETED,
+    name: 'Recruiter Account Deleted',
+    title: 'Your account has been deleted',
+    message: 'Your account has been successfully deleted',
 };
 
 export const NOTIF_TYPE__RECRUITER_CANDIDATE_STAGE_UPDATED: NotificationType = {
